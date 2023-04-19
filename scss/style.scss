@@ -25,24 +25,28 @@ with others.
 @import "../node_modules/bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
-$color-1: #ED6D32;
-$color-2: #FF5E5B;
+// Colors
+$color-1: #FF5E5B;
+$color-2: #F7D1D6;
 $color-3: #DDC1F8;
-$color-4: #FFE2E6;
-$color-5: #F090A8;
-$color-6: #BCB9F9;
-$color-7: #F4B89F;
-$color-8: #85A8E9;
-$color-9: #5C8078;
+$color-4: #F090A8;
+$color-5: #BCB9F9;
+$color-6: #F4B89F;
+$color-7: #85A8E9;
+$color-8: #5C8078;
+
+$color-9: #FFE2E6;
 
 $copy: #1F1223;
 
-$primary: $color-2;
-$secondary: $color-4;
+$primary: $color-1;
+$secondary: $color-2;
 
 $body-color: $copy;
 
+// Type
 $font-family-sans-serif: 'Figtree', sans-serif;
+$primary-sans: $font-family-sans-serif;
 
 // 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
 @import "../node_modules/bootstrap/scss/variables";
@@ -64,6 +68,11 @@ $font-family-sans-serif: 'Figtree', sans-serif;
 @import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
 @import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/dropdown";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/buttons";
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "../node_modules/bootstrap/scss/utilities/api";

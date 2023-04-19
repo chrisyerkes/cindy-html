@@ -1,0 +1,21 @@
+$light: 300;
+$regular: 400;
+$medium: 500;
+$demi: 600;
+$semi-bold: $demi;
+$bold: 700;
+$extra-bold: 800;
+$black: 800;
+
+
+h1 {
+	color: $primary;
+	font-weight: $regular;
+	@include font-size(48px);
+	@include rfs(62px, line-height);
+}
+
+a {
+	text-decoration: none;
+	transition: 0.25s color;
+}
