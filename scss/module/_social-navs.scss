@@ -24,6 +24,8 @@
 				margin-right: 0;
 			}
 			&.instagram {
+				@include font-size(18px);
+
 				a {
 					background-color: $color-4;
 				}
@@ -34,8 +36,37 @@
 				}
 			}
 			&.email {
+				@include font-size(17.5px);
+
 				a {
-					background-color: $color-6;
+					background-color: $accent-2;
+				}
+			}
+		}
+	}
+	&.social-nav-big-text {
+		flex-direction: column;
+
+		li {
+			a {
+				@include font-size(48px);
+				@include rfs(62px, line-height);
+				font-weight: $medium;
+				text-decoration: underline;
+			}
+			&.email {
+				a {
+					color: $color-1;
+				}
+			}
+			&.instagram {
+				a {
+					color: $color-4;
+				}
+			}
+			&.linkedin {
+				a {
+					color: $color-7;
 				}
 			}
 		}

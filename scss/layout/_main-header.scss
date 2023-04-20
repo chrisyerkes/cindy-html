@@ -1,4 +1,5 @@
 #MainHeader {
 	@include padding-top(65px);
-	background-color: $color-9;
+	background-color: $accent-1;
+	overflow: hidden;
 }

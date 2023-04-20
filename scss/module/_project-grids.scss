@@ -1,0 +1,86 @@
+.project-grid {
+	@include margin-bottom(55px);
+
+	.project {
+		.project-thumb {
+			overflow: hidden;
+			@include border-radius(8px);
+			@include margin-bottom(20px);
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: center center;
+			}
+		}
+		.project-info {
+			h3 {
+				.svg-inline--fa {
+					@include font-size(20px);
+					@include margin-left(3px);
+				}
+			}
+			.categories {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				display: flex;
+				flex-wrap: wrap;
+
+				li {
+					@include margin-right(5px);
+
+					&:last-child {
+						margin-right: 0;
+					}
+					a {
+						font-weight: $semi-bold;
+					}
+					&.ui-design {
+						a {
+							color: $accent-3;
+						}
+					}
+					&.branding {
+						a {
+							color: $accent-2;
+						}
+					}
+					&.motion-graphics {
+						a {
+							color: $accent-4;
+						}
+					}
+					&.illustration {
+						a {
+							color: $color-4;
+						}
+					}
+					&.art-direction,
+					&.print-design {
+						a {
+							color: $accent-5;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.project-grid-3-columns {
+		.project {
+			.project-thumb {
+				// height: 265px;
+				aspect-ratio: 400/265;
+			}
+		}
+	}
+	&.project-grid-2-columns {
+		.project {
+			.project-thumb {
+				// height: 400px;
+				aspect-ratio: 610/404;
+			}
+		}
+	}
+}

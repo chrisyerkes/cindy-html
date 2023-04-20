@@ -15,6 +15,12 @@ h1 {
 	@include rfs(62px, line-height);
 }
 
+h3 {
+	font-weight: $bold;
+	@include font-size(24px);
+	@include rfs(28px, line-height);
+}
+
 a {
 	text-decoration: none;
 	transition: 0.25s color;

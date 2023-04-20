@@ -1,0 +1,8 @@
+.home-content {
+	@include padding-top(55px);
+	@include padding-bottom(320px);
+
+	& > *:last-child {
+		margin-bottom: 0;
+	}
+}
