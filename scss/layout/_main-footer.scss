@@ -1,7 +1,8 @@
 #MainFooter {
 	position: relative;
 	z-index: 20;
-	
+	background-color: white;
+
 	.seperator-and-logo {
 		position: relative;
 		@include margin-bottom(90px);
@@ -12,7 +13,7 @@
 			background-size: cover;
 			background-repeat: repeat-x;
 			width: calc(100% - 30px);
-			height: 14px;
+			height: 16px;
 			position: absolute;
 			left: 15px;
 			top: 0;
