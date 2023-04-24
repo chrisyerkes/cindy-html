@@ -1,4 +1,7 @@
 #MainFooter {
+	position: relative;
+	z-index: 20;
+	
 	.seperator-and-logo {
 		position: relative;
 		@include margin-bottom(90px);
@@ -19,6 +22,10 @@
 			right: 20px;
 			top: -50px;
 			transform: rotate(15deg);
+
+			@include media-breakpoint-down(xl) {
+				top: -120px;
+			}
 		}
 	}
 	.footer-contact {

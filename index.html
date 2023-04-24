@@ -17,8 +17,8 @@
 		<link href="style.css" rel="stylesheet" />
 	</head>
 	<body>
-		<header id="MainHeader">
-			<nav class="navbar navbar-expand-lg main-menu">
+		<header id="MainHeader" class="fixed-top">
+			<nav class="navbar navbar-expand-md main-menu">
 				<div class="container">
 					<a class="navbar-brand" href="index.html">Cindy Lau</a>
 					<button
@@ -66,287 +66,296 @@
 					</div>
 				</div>
 			</nav>
-			<div class="home-hero">
-				<div class="container">
-					<div class="row">
-						<div
-							class="col d-flex flex-column justify-content-center align-items-center"
-						>
+		</header>
+		<section class="white-wave-header home-hero">
+			<div class="container">
+				<div class="row">
+					<div
+						class="col d-flex flex-column justify-content-center align-items-center"
+					>
+						<img
+							src="images/fpo_logo.png"
+							alt="Cindy Lau"
+							width="218"
+							height="218"
+							class="main-logo"
+						/>
+						<h1 class="text-center text-rainbow">
+							Cindy is a designer, illustrator, and educator
+							living and creating in the northeast.
+						</h1>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="container-fluid home-content">
+			<div class="container">
+				<div
+					class="grid project-grid project-grid-3-columns"
+					style="--bs-gap: 1.25rem"
+				>
+					<div class="g-col-12 g-col-lg-4 project">
+						<div class="project-thumb">
 							<img
-								src="images/fpo_logo.png"
-								alt="Cindy Lau"
-								width="218"
-								height="218"
-								class="main-logo"
+								src="images/fpo_800x528.svg"
+								alt="Project Thumbnail"
+								class="img-fluid"
 							/>
-							<h1 class="text-center">
-								Cindy is a designer, illustrator, and
-								educator<br />
-								living and creating in the northeast.
-							</h1>
+						</div>
+						<div class="project-info">
+							<h3>
+								Project Name
+								<i class="fa-solid fa-circle-arrow-right"></i>
+							</h3>
+							<ul class="categories">
+								<li class="branding">
+									<a href="#">+ Branding</a>
+								</li>
+								<li class="illustration">
+									<a href="#">+ Illustration</a>
+								</li>
+								<li class="art-direction">
+									<a href="#">+ Art Direction</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="g-col-12 g-col-lg-4 project">
+						<div class="project-thumb">
+							<img
+								src="images/fpo_800x528.svg"
+								alt="Project Thumbnail"
+								class="img-fluid"
+							/>
+						</div>
+						<div class="project-info">
+							<h3>
+								Project Name
+								<i class="fa-solid fa-circle-arrow-right"></i>
+							</h3>
+							<ul class="categories">
+								<li class="ui-design">
+									<a href="#">+ UI Design</a>
+								</li>
+								<li class="motion-graphics">
+									<a href="#">+ Motion Graphics</a>
+								</li>
+								<li class="branding">
+									<a href="#">+ Branding</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="g-col-12 g-col-lg-4 project">
+						<div class="project-thumb">
+							<img
+								src="images/fpo_800x528.svg"
+								alt="Project Thumbnail"
+								class="img-fluid"
+							/>
+						</div>
+						<div class="project-info">
+							<h3>
+								Project Name
+								<i class="fa-solid fa-circle-arrow-right"></i>
+							</h3>
+							<ul class="categories">
+								<li class="print-design">
+									<a href="#">+ Print Design</a>
+								</li>
+								<li class="illustration">
+									<a href="#">+ Illustration</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
-			</div>
-		</header>
-		<section class="container home-content">
-			<div
-				class="grid project-grid project-grid-3-columns"
-				style="--bs-gap: 1.25rem"
-			>
-				<div class="g-col-4 project">
-					<div class="project-thumb">
-						<img
-							src="images/fpo_800x528.svg"
-							alt="Project Thumbnail"
-							class="img-fluid"
-						/>
+				<div
+					class="grid project-grid project-grid-2-columns"
+					style="--bs-gap: 1.375rem"
+				>
+					<div class="g-col-12 g-col-lg-6 project">
+						<div class="project-thumb">
+							<img
+								src="images/fpo_1220x808.svg"
+								alt="Project Thumbnail"
+								class="img-fluid"
+							/>
+						</div>
+						<div class="project-info">
+							<h3>
+								Project Name
+								<i class="fa-solid fa-circle-arrow-right"></i>
+							</h3>
+							<ul class="categories">
+								<li class="branding">
+									<a href="#">+ Branding</a>
+								</li>
+								<li class="illustration">
+									<a href="#">+ Illustration</a>
+								</li>
+								<li class="art-direction">
+									<a href="#">+ Art Direction</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div class="project-info">
-						<h3>
-							Project Name
-							<i class="fa-solid fa-circle-arrow-right"></i>
-						</h3>
-						<ul class="categories">
-							<li class="branding"><a href="#">+ Branding</a></li>
-							<li class="illustration">
-								<a href="#">+ Illustration</a>
-							</li>
-							<li class="art-direction">
-								<a href="#">+ Art Direction</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="g-col-4 project">
-					<div class="project-thumb">
-						<img
-							src="images/fpo_800x528.svg"
-							alt="Project Thumbnail"
-							class="img-fluid"
-						/>
-					</div>
-					<div class="project-info">
-						<h3>
-							Project Name
-							<i class="fa-solid fa-circle-arrow-right"></i>
-						</h3>
-						<ul class="categories">
-							<li class="ui-design">
-								<a href="#">+ UI Design</a>
-							</li>
-							<li class="motion-graphics">
-								<a href="#">+ Motion Graphics</a>
-							</li>
-							<li class="branding">
-								<a href="#">+ Branding</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="g-col-4 project">
-					<div class="project-thumb">
-						<img
-							src="images/fpo_800x528.svg"
-							alt="Project Thumbnail"
-							class="img-fluid"
-						/>
-					</div>
-					<div class="project-info">
-						<h3>
-							Project Name
-							<i class="fa-solid fa-circle-arrow-right"></i>
-						</h3>
-						<ul class="categories">
-							<li class="print-design">
-								<a href="#">+ Print Design</a>
-							</li>
-							<li class="illustration">
-								<a href="#">+ Illustration</a>
-							</li>
-						</ul>
+					<div class="g-col-12 g-col-lg-6 project">
+						<div class="project-thumb">
+							<img
+								src="images/fpo_1220x808.svg"
+								alt="Project Thumbnail"
+								class="img-fluid"
+							/>
+						</div>
+						<div class="project-info">
+							<h3>
+								Project Name
+								<i class="fa-solid fa-circle-arrow-right"></i>
+							</h3>
+							<ul class="categories">
+								<li class="ui-design">
+									<a href="#">+ UI Design</a>
+								</li>
+								<li class="motion-graphics">
+									<a href="#">+ Motion Graphics</a>
+								</li>
+								<li class="branding">
+									<a href="#">+ Branding</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div
-				class="grid project-grid project-grid-2-columns"
-				style="--bs-gap: 1.375rem"
-			>
-				<div class="g-col-6 project">
-					<div class="project-thumb">
-						<img
-							src="images/fpo_1220x808.svg"
-							alt="Project Thumbnail"
-							class="img-fluid"
-						/>
+				<div class="grid project-grid project-grid-3-columns">
+					<div class="g-col-12 g-col-lg-4 project">
+						<div class="project-thumb">
+							<img
+								src="images/fpo_800x528.svg"
+								alt="Project Thumbnail"
+								class="img-fluid"
+							/>
+						</div>
+						<div class="project-info">
+							<h3>
+								Project Name
+								<i class="fa-solid fa-circle-arrow-right"></i>
+							</h3>
+							<ul class="categories">
+								<li class="branding">
+									<a href="#">+ Branding</a>
+								</li>
+								<li class="illustration">
+									<a href="#">+ Illustration</a>
+								</li>
+								<li class="art-direction">
+									<a href="#">+ Art Direction</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div class="project-info">
-						<h3>
-							Project Name
-							<i class="fa-solid fa-circle-arrow-right"></i>
-						</h3>
-						<ul class="categories">
-							<li class="branding"><a href="#">+ Branding</a></li>
-							<li class="illustration">
-								<a href="#">+ Illustration</a>
-							</li>
-							<li class="art-direction">
-								<a href="#">+ Art Direction</a>
-							</li>
-						</ul>
+					<div class="g-col-12 g-col-lg-4 project">
+						<div class="project-thumb">
+							<img
+								src="images/fpo_800x528.svg"
+								alt="Project Thumbnail"
+								class="img-fluid"
+							/>
+						</div>
+						<div class="project-info">
+							<h3>
+								Project Name
+								<i class="fa-solid fa-circle-arrow-right"></i>
+							</h3>
+							<ul class="categories">
+								<li class="ui-design">
+									<a href="#">+ UI Design</a>
+								</li>
+								<li class="motion-graphics">
+									<a href="#">+ Motion Graphics</a>
+								</li>
+								<li class="branding">
+									<a href="#">+ Branding</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-				</div>
-				<div class="g-col-6 project">
-					<div class="project-thumb">
-						<img
-							src="images/fpo_1220x808.svg"
-							alt="Project Thumbnail"
-							class="img-fluid"
-						/>
-					</div>
-					<div class="project-info">
-						<h3>
-							Project Name
-							<i class="fa-solid fa-circle-arrow-right"></i>
-						</h3>
-						<ul class="categories">
-							<li class="ui-design">
-								<a href="#">+ UI Design</a>
-							</li>
-							<li class="motion-graphics">
-								<a href="#">+ Motion Graphics</a>
-							</li>
-							<li class="branding">
-								<a href="#">+ Branding</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="grid project-grid project-grid-3-columns">
-				<div class="g-col-4 project">
-					<div class="project-thumb">
-						<img
-							src="images/fpo_800x528.svg"
-							alt="Project Thumbnail"
-							class="img-fluid"
-						/>
-					</div>
-					<div class="project-info">
-						<h3>
-							Project Name
-							<i class="fa-solid fa-circle-arrow-right"></i>
-						</h3>
-						<ul class="categories">
-							<li class="branding"><a href="#">+ Branding</a></li>
-							<li class="illustration">
-								<a href="#">+ Illustration</a>
-							</li>
-							<li class="art-direction">
-								<a href="#">+ Art Direction</a>
-							</li>
-						</ul>
+					<div class="g-col-12 g-col-lg-4 project">
+						<div class="project-thumb">
+							<img
+								src="images/fpo_800x528.svg"
+								alt="Project Thumbnail"
+								class="img-fluid"
+							/>
+						</div>
+						<div class="project-info">
+							<h3>
+								Project Name
+								<i class="fa-solid fa-circle-arrow-right"></i>
+							</h3>
+							<ul class="categories">
+								<li class="print-design">
+									<a href="#">+ Print Design</a>
+								</li>
+								<li class="illustration">
+									<a href="#">+ Illustration</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<div class="g-col-4 project">
-					<div class="project-thumb">
-						<img
-							src="images/fpo_800x528.svg"
-							alt="Project Thumbnail"
-							class="img-fluid"
-						/>
+				<div class="grid project-grid project-grid-2-columns">
+					<div class="g-col-12 g-col-lg-6 project">
+						<div class="project-thumb">
+							<img
+								src="images/fpo_1220x808.svg"
+								alt="Project Thumbnail"
+								class="img-fluid"
+							/>
+						</div>
+						<div class="project-info">
+							<h3>
+								Project Name
+								<i class="fa-solid fa-circle-arrow-right"></i>
+							</h3>
+							<ul class="categories">
+								<li class="branding">
+									<a href="#">+ Branding</a>
+								</li>
+								<li class="illustration">
+									<a href="#">+ Illustration</a>
+								</li>
+								<li class="art-direction">
+									<a href="#">+ Art Direction</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div class="project-info">
-						<h3>
-							Project Name
-							<i class="fa-solid fa-circle-arrow-right"></i>
-						</h3>
-						<ul class="categories">
-							<li class="ui-design">
-								<a href="#">+ UI Design</a>
-							</li>
-							<li class="motion-graphics">
-								<a href="#">+ Motion Graphics</a>
-							</li>
-							<li class="branding">
-								<a href="#">+ Branding</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="g-col-4 project">
-					<div class="project-thumb">
-						<img
-							src="images/fpo_800x528.svg"
-							alt="Project Thumbnail"
-							class="img-fluid"
-						/>
-					</div>
-					<div class="project-info">
-						<h3>
-							Project Name
-							<i class="fa-solid fa-circle-arrow-right"></i>
-						</h3>
-						<ul class="categories">
-							<li class="print-design">
-								<a href="#">+ Print Design</a>
-							</li>
-							<li class="illustration">
-								<a href="#">+ Illustration</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="grid project-grid project-grid-2-columns">
-				<div class="g-col-6 project">
-					<div class="project-thumb">
-						<img
-							src="images/fpo_1220x808.svg"
-							alt="Project Thumbnail"
-							class="img-fluid"
-						/>
-					</div>
-					<div class="project-info">
-						<h3>
-							Project Name
-							<i class="fa-solid fa-circle-arrow-right"></i>
-						</h3>
-						<ul class="categories">
-							<li class="branding"><a href="#">+ Branding</a></li>
-							<li class="illustration">
-								<a href="#">+ Illustration</a>
-							</li>
-							<li class="art-direction">
-								<a href="#">+ Art Direction</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="g-col-6 project">
-					<div class="project-thumb">
-						<img
-							src="images/fpo_1220x808.svg"
-							alt="Project Thumbnail"
-							class="img-fluid"
-						/>
-					</div>
-					<div class="project-info">
-						<h3>
-							Project Name
-							<i class="fa-solid fa-circle-arrow-right"></i>
-						</h3>
-						<ul class="categories">
-							<li class="ui-design">
-								<a href="#">+ UI Design</a>
-							</li>
-							<li class="motion-graphics">
-								<a href="#">+ Motion Graphics</a>
-							</li>
-							<li class="branding">
-								<a href="#">+ Branding</a>
-							</li>
-						</ul>
+					<div class="g-col-12 g-col-lg-6 project">
+						<div class="project-thumb">
+							<img
+								src="images/fpo_1220x808.svg"
+								alt="Project Thumbnail"
+								class="img-fluid"
+							/>
+						</div>
+						<div class="project-info">
+							<h3>
+								Project Name
+								<i class="fa-solid fa-circle-arrow-right"></i>
+							</h3>
+							<ul class="categories">
+								<li class="ui-design">
+									<a href="#">+ UI Design</a>
+								</li>
+								<li class="motion-graphics">
+									<a href="#">+ Motion Graphics</a>
+								</li>
+								<li class="branding">
+									<a href="#">+ Branding</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -367,7 +376,7 @@
 					</div>
 				</div>
 				<div class="row justify-content-between footer-contact">
-					<div class="col-7">
+					<div class="col-lg-7 text-center text-lg-start">
 						<p>
 							For project inquiries or a quick chat feel free to
 							email:
@@ -376,8 +385,10 @@
 							>
 						</p>
 					</div>
-					<div class="col-4 footer-social">
-						<ul class="social-nav social-nav-big-text">
+					<div class="col-lg-4 footer-social">
+						<ul
+							class="social-nav social-nav-big-text text-center text-lg-start"
+						>
 							<li class="email">
 								<a href="#">Email</a>
 							</li>
@@ -391,7 +402,7 @@
 					</div>
 				</div>
 				<div class="row footer-copyright">
-					<div class="col">
+					<div class="col text-center text-lg-start">
 						<p>
 							&copy; 2023 Cindy Lau<br />
 							Dev by
@@ -404,5 +415,6 @@
 			</div>
 		</footer>
 		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/functions-dist.js"></script>
 	</body>
 </html>

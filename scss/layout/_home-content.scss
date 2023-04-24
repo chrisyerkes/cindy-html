@@ -1,6 +1,9 @@
 .home-content {
 	@include padding-top(55px);
 	@include padding-bottom(320px);
+	background-color: white;
+	position: relative;
+	z-index: 10;
 
 	& > *:last-child {
 		margin-bottom: 0;

@@ -1,0 +1,24 @@
+.text-rainbow {
+	span {
+		&.default {
+			color: inherit !important;
+			transition: 3s color ease-out;
+			transition-delay: 1s;
+		}
+		&.color1 {
+			color: $copy;
+		}
+		&.color2 {
+			color: $color-4;
+		}
+		&.color3 {
+			color: $accent-4;
+		}
+		&.color4 {
+			color: $accent-5;
+		}
+		&.color5 {
+			color: $color-7;
+		}
+	}
+}
