@@ -1,4 +1,26 @@
 document.addEventListener('DOMContentLoaded', function () {
+	// Intersection observer trigger function
+	function addClassOnScroll(element) {
+		const observer = new IntersectionObserver((entries) => {
+			// Loop through the entries
+			entries.forEach((entry) => {
+				// If the element is in view, add the "loaded" class
+				if (entry.isIntersecting) {
+					element.classList.add('loaded');
+					// Stop observing the element
+					observer.unobserve(element);
+				}
+			});
+		});
+
+		// Start observing the element
+		observer.observe(element);
+	}
+	// Animated Separator
+	const footerSep = document.querySelector('.seperator-and-logo');
+	addClassOnScroll(footerSep);
+
+	// Rainbow Text Effect
 	const textRainbowElements = document.querySelectorAll('.text-rainbow');
 	const colorArray = ['color1', 'color2', 'color3', 'color4', 'color5'];
 
