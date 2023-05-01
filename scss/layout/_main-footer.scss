@@ -50,7 +50,11 @@
 					transform: translateX(calc(100% - 180px));
 
 					.logo-background-shape {
-						transform: translateX(-62px) rotate(730deg);
+						transform: translateX(-62px) rotate(540deg);
+
+						svg {
+							transform: rotate(170deg);
+						}
 					}
 				}
 			}
