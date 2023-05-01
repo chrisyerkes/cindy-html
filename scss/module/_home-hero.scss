@@ -26,21 +26,11 @@
 
 		.logo-background-shape {
 			height: 180px;
-			transform: rotate(-10deg);
 			
-			&::after {
-				// For straight up wipe
-				// transform: translate(-31px,100%) rotate(10deg);
-			}
 			svg {
 				width: 180px;
 				height: 180px;
-			}
-			&:hover {
-				&::after {
-					// For straight up wipe
-					// transform: translate(0, 0) rotate(10deg);
-				}
+				transform: rotate(-10deg);
 			}
 		}
 	}
