@@ -38,6 +38,11 @@
 					width: 180px;
 					transform: translateX(0) rotate(0);
 					transition: 3s transform;
+
+					svg {
+						transform: rotate(0);
+						transition: 3s transform;
+					}
 				}
 			}
 		}
@@ -50,10 +55,11 @@
 					transform: translateX(calc(100% - 180px));
 
 					.logo-background-shape {
-						transform: translateX(-62px) rotate(540deg);
+						// transform: translateX(-62px) rotate(540deg);
+						transform: translateX(-62px);
 
 						svg {
-							transform: rotate(170deg);
+							transform: rotate(730deg);
 						}
 					}
 				}
