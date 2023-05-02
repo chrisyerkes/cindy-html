@@ -9,6 +9,7 @@
 			@include border-radius(8px);
 			@include margin-bottom(20px);
 			position: relative;
+			z-index: 0;
 
 			&::before {
 				content: '';
@@ -20,6 +21,7 @@
 				z-index: 10;
 				border: 4px solid transparent;
 				transition: 0.25s border-color;
+				@include border-radius(8px);
 				will-change: border-color;
 			}
 			img {
