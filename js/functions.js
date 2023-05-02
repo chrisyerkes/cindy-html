@@ -1,3 +1,6 @@
+// https://confetti.js.org/more.html
+// For confetti pop effect on badges
+
 document.addEventListener('DOMContentLoaded', function () {
 	// Intersection observer trigger function
 	function addClassOnScroll(element) {
