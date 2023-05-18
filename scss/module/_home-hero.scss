@@ -1,37 +1,3 @@
 .home-hero {
-	@include padding-bottom(85px);
-	@include padding-top(130px);
-	// border-bottom: 25px solid white;
-	background-color: $home-hero-bg-color;
-	top: 0;
-	position: sticky;
-	z-index: 0;
-
-	@include media-breakpoint-down(lg) {
-		br {
-			display: none;
-		}
-	}
-	h1 {
-		@include padding-left(150px);
-		@include padding-right(150px);
-
-		@include media-breakpoint-down(lg) {
-			padding: 0;
-		}
-	}
-	.logo-container {
-		@include padding-top(30px);
-		@include padding-bottom(20px);
-
-		.logo-background-shape {
-			height: 180px;
-			
-			svg {
-				width: 180px;
-				height: 180px;
-				transform: rotate(-10deg);
-			}
-		}
-	}
+	
 }
