@@ -67,63 +67,69 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	// Badge Confetti Pop
 	const badges = document.querySelectorAll('.badge-container svg');
-	badges.forEach((badge) => {
-		badge.addEventListener('click', (e) => {
-			const coords = badge.getBoundingClientRect();
-			const viewportWidth =
-				window.innerWidth || document.documentElement.clientWidth;
-			const viewportHeight =
-				window.innerHeight || document.documentElement.clientHeight;
+	if (badges) {
+		badges.forEach((badge) => {
+			badge.addEventListener('click', (e) => {
+				const coords = badge.getBoundingClientRect();
+				const viewportWidth =
+					window.innerWidth || document.documentElement.clientWidth;
+				const viewportHeight =
+					window.innerHeight || document.documentElement.clientHeight;
 
-			const position = {
-				top: ((coords.top + coords.height / 2) / viewportHeight) * 100,
-				left: ((coords.left + coords.width / 2) / viewportWidth) * 100,
-			};
-
-			const count = 200,
-				defaults = {
-					position: {
-						x: position.left,
-						y: position.top,
-					},
-					zIndex: 5,
+				const position = {
+					top:
+						((coords.top + coords.height / 2) / viewportHeight) *
+						100,
+					left:
+						((coords.left + coords.width / 2) / viewportWidth) *
+						100,
 				};
 
-			function fire(particleRatio, opts) {
-				confetti(
-					Object.assign({}, defaults, opts, {
-						particleCount: Math.floor(count * particleRatio),
-					})
-				);
-			}
-			badge.classList.add('jello-vertical');
-			setTimeout((e) => {
-				fire(0.25, {
-					spread: 26,
-					startVelocity: 55,
-				});
-				fire(0.2, {
-					spread: 60,
-				});
-				fire(0.35, {
-					spread: 100,
-					decay: 0.91,
-					scalar: 0.8,
-				});
-				fire(0.1, {
-					spread: 120,
-					startVelocity: 25,
-					decay: 0.92,
-					scalar: 1.2,
-				});
-				fire(0.1, {
-					spread: 120,
-					startVelocity: 45,
-				});
-			}, 300);
-			setTimeout((e) => {
-				badge.classList.remove('jello-vertical');
-			}, 900);
+				const count = 200,
+					defaults = {
+						position: {
+							x: position.left,
+							y: position.top,
+						},
+						zIndex: 5000,
+					};
+
+				function fire(particleRatio, opts) {
+					confetti(
+						Object.assign({}, defaults, opts, {
+							particleCount: Math.floor(count * particleRatio),
+						})
+					);
+				}
+				badge.classList.add('jello-vertical');
+				setTimeout((e) => {
+					fire(0.25, {
+						spread: 26,
+						startVelocity: 55,
+					});
+					fire(0.2, {
+						spread: 60,
+					});
+					fire(0.35, {
+						spread: 100,
+						decay: 0.91,
+						scalar: 0.8,
+					});
+					fire(0.1, {
+						spread: 120,
+						startVelocity: 25,
+						decay: 0.92,
+						scalar: 1.2,
+					});
+					fire(0.1, {
+						spread: 120,
+						startVelocity: 45,
+					});
+				}, 300);
+				setTimeout((e) => {
+					badge.classList.remove('jello-vertical');
+				}, 900);
+			});
 		});
-	});
+	}
 });
