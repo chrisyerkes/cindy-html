@@ -1,4 +1,5 @@
 // https://confetti.js.org/more.html
+// https://animista.net/play/attention/jello/jello-vertical
 // For confetti pop effect on badges
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -66,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	// Badge Confetti Pop
-	const badges = document.querySelectorAll('.badge-container svg');
+	const badges = document.querySelectorAll('.badge-container .svg');
 	if (badges) {
 		badges.forEach((badge) => {
 			badge.addEventListener('click', (e) => {

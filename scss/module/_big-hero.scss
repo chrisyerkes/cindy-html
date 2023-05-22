@@ -1,5 +1,5 @@
 .big-hero {
-	@include padding-bottom(85px);
+	@include padding-bottom(185px);
 	@include padding-top(130px);
 	// border-bottom: 25px solid white;
 	background-color: $home-hero-bg-color;
@@ -24,7 +24,7 @@
 
 	.logo-container {
 		@include padding-top(30px);
-		@include padding-bottom(20px);
+		@include padding-bottom(50px);
 
 		.logo-background-shape {
 			height: 180px;
