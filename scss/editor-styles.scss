@@ -1,0 +1,48 @@
+/*
+Theme Name: Cindy 2023 Portfolio
+Author: Chris Yerkes
+Author URI: https://chriswho.codes
+Theme URI: https://cindylau.com
+Tags: full-site-editing, editor-style, block-styles, block-patterns
+Text Domain: cindy-lau
+Requires at least: 6.2
+Requires PHP: 7.4
+Tested up to: 6.2
+Version: 1.0.0
+
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+All files, unless otherwise stated, are released under the GNU General Public
+License version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned
+with others.
+*/
+
+// body{
+//     --wp--preset--spacing--40: 40px;
+//     --wp--preset--spacing--30: 30px;
+//     --idg-body-font-size: 18px;
+//     --idg-body-line-height: 1.45;
+// }
+
+// Fixing navbar height
+.logged-in.admin-bar {
+	.main-header {
+		top: 32px;
+	}
+}
+
+// Add additional custom code here
+@import "base/_base-index";
+@import "layout/_layout-index";
+@import "module/_module-index";
+@import "state/_state-index";
+// @import "theme/_theme-index";
+
+// Editor only styles
+.is-root-container {
+	
+}

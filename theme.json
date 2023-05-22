@@ -1,0 +1,251 @@
+{
+	"version": 2,
+	"supports": {
+		"align": ["wide", "full"]
+	},
+	"settings": {
+		"layout": {
+			"contentSize": "1200px",
+			"wideSize": "1400px"
+		},
+		"dimensions": {
+			"minHeight": true
+		},
+		"border": {
+			"color": true
+		},
+		"appearanceTools": true,
+		"spacing": {
+			"blockGap": true
+		},
+		"styles": {
+			"spacing": {
+				"blockGap": "1.5rem"
+			}
+		},
+		"color": {
+			"defaultPalette": false,
+			"palette": [
+				{
+					"slug": "black",
+					"color": "#000",
+					"name": "Black"
+				},
+				{
+					"slug": "white",
+					"color": "#fff",
+					"name": "White"
+				},
+				{
+					"slug": "copy",
+          "color": "#1F1223",
+          "name": "Text Copy"
+				},
+				{
+					"slug": "primary",
+					"color": "#FF5E5B",
+					"name": "Primary"
+				},
+				{
+					"slug": "secondary",
+          "color": "#F7D1D6",
+          "name": "Secondary"
+				},
+				{
+					"slug": "color-1",
+          "color": "#DDC1F8",
+          "name": "Color 1"
+				},
+				{
+					"slug": "color-2",
+          "color": "#F090A8",
+          "name": "Color 2"
+				},
+				{
+					"slug": "color-3",
+          "color": "#BCB9F9",
+          "name": "Color 3"
+				},
+				{
+					"slug": "color-4",
+          "color": "#F4B89F",
+          "name": "Color 4"
+				},
+				{
+					"slug": "color-5",
+          "color": "#85A8E9",
+          "name": "Color 5"
+				},
+				{
+					"slug": "color-6",
+          "color": "#5C8078",
+          "name": "Color 6"
+				},
+				{
+					"slug": "accent-1",
+          "color": "#FFE2E6",
+          "name": "Accent 1"
+				},
+				{
+					"slug": "accent-2",
+          "color": "#ED6D32",
+          "name": "Accent 2"
+				},
+				{
+					"slug": "accent-3",
+          "color": "#794E69",
+          "name": "Accent 3"
+				},
+				{
+					"slug": "accent-4",
+          "color": "#F2AE46",
+          "name": "Accent 4"
+				},
+				{
+					"slug": "accent-5",
+          "color": "#7A9EB8",
+          "name": "Accent 5"
+				},
+				{
+					"slug": "accent-6",
+          "color": "#BDDCF2",
+          "name": "Accent 6"
+				}
+			]
+		},
+		"typography": {
+			"fontWeight": true,
+			"fontStyle": true,
+			"letterSpacing": false,
+			"fontFamilies": [
+				{
+					"fontFamily": "\"Futura\", sans-serif",
+					"name": "Futura",
+					"slug": "futura",
+					"fontFace": [
+						{
+							"fontFamily": "Futura",
+							"fontWeight": "300",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [
+								"file:./assets/fonts/FuturaPTLight.otf"
+							]
+						},
+						{
+							"fontFamily": "Futura",
+							"fontWeight": "400",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [
+								"file:./assets/fonts/FuturaPTBook.otf"
+							]
+						},
+						{
+							"fontFamily": "Futura",
+							"fontWeight": "500",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [
+								"file:./assets/fonts/FuturaPTMedium.otf"
+							]
+						},
+						{
+							"fontFamily": "Futura",
+							"fontWeight": "700",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [
+								"file:./assets/fonts/FuturaPTBold.otf"
+							]
+						}
+					]
+				},
+				{
+					"fontFamily": "\"Lexend\", cursive",
+					"name": "Lexend",
+					"slug": "lexend",
+					"fontFace": [
+						{
+							"fontFamily": "Lexend",
+							"fontWeight": "300",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/LexendDeca-Light.ttf" ]
+						},
+						{
+							"fontFamily": "Lexend",
+							"fontWeight": "400",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/LexendDeca-Regular.ttf" ]
+						},
+						{
+							"fontFamily": "Lexend",
+							"fontWeight": "600",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/LexendDeca-SemiBold.ttf" ]
+						},
+						{
+							"fontFamily": "Lexend",
+							"fontWeight": "700",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/LexendDeca-Bold.ttf" ]
+						}
+					]
+				},
+				{
+					"fontFamily": "\"Literata\", sans-serif",
+					"name": "Literata",
+					"slug": "literata",
+					"fontFace": [
+						{
+							"fontFamily": "Literata",
+							"fontWeight": "300",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Literata-Light.ttf" ]
+						},
+						{
+							"fontFamily": "Literata",
+							"fontWeight": "300",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Literata-LightItalic.ttf" ]
+						},
+						{
+							"fontFamily": "Literata",
+							"fontWeight": "600",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Literata-SemiBold.ttf" ]
+						},
+						{
+							"fontFamily": "Literata",
+							"fontWeight": "600",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Literata-SemiBoldItalic.ttf" ]
+						},
+						{
+							"fontFamily": "Literata",
+							"fontWeight": "800",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Literata-Black.ttf" ]
+						},
+						{
+							"fontFamily": "Literata",
+							"fontWeight": "800",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [ "file:./assets/fonts/Literata-BlackItalic.ttf" ]
+						}
+					]
+				}
+			]
+		}
+	}
+}
