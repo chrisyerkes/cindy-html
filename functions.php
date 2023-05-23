@@ -20,6 +20,29 @@ if (!function_exists('cindylau_theme_setup')) {
 
 	add_theme_support('editor-styles');
 	add_editor_style('editor-styles.css');
+	add_theme_support('automatic-feed-links');
+	add_theme_support('title-tag');
+	add_theme_support('post-thumbnails');
+	add_theme_support(
+		'html5',
+		array(
+			'comment-form',
+			'comment-list',
+			'gallery',
+			'caption',
+			'script',
+			'style',
+			'navigation-widgets',
+		)
+	);
+	register_nav_menus(
+		array(
+			'top'    => __('Top Menu', 'cindylau'),
+		)
+	);
+	add_theme_support('wp-block-styles');
+	add_theme_support('block-template-parts');
+	add_theme_support('responsive-embeds');
 }
 add_action('after_theme_setup', 'cindylau_theme_setup');
 
@@ -32,7 +55,7 @@ add_action('after_theme_setup', 'cindylau_theme_setup');
 if (!function_exists('fse_styles')) {
 	function fse_styles()
 	{
-		// wp_enqueue_style('splide-core', get_theme_file_uri('/assets/css/splide.min.css'), array(), '4.1.4');
+		wp_enqueue_style('fontawesome', 'https://kit.fontawesome.com/07e203ce75.js', array(), '1.0.0');
 		wp_enqueue_style(
 			'fse-style',
 			get_stylesheet_uri(),
@@ -40,20 +63,12 @@ if (!function_exists('fse_styles')) {
 			CINDYLAU_VERSION
 		);
 
-		// wp_enqueue_script('sunfish-js', get_theme_file_uri('/assets/js/main.1f250b33.js'), array(), null, true);
+		wp_enqueue_script('bootstrap-js', get_theme_file_uri('/js/bootstrap.bundle.min.js'), array(), '5.3.0', true);
 		// wp_enqueue_script('splide-js', get_theme_file_uri('/assets/js/splide.min.js'), array(), '4.1.4', true);
-		wp_enqueue_script('functions-js', get_theme_file_uri('/js/functions-dist.js'), array('splide-js'), '1.0.0', true);
+		wp_enqueue_script('functions-js', get_theme_file_uri('js/functions-dist.js'), array('bootstrap-js'), '1.0.0', true);
 	}
 }
 add_action('wp_enqueue_scripts', 'fse_styles');
-
-if (!function_exists('fse_setup')) {
-	function fse_setup()
-	{
-		add_theme_support('wp-block-styles');
-	}
-}
-add_action('after_setup_theme', 'fse_setup');
 
 // ACF Local JSON Sync
 add_filter('acf/settings/save_json', 'my_acf_json_save_point');
@@ -90,3 +105,19 @@ function wpdocs_excerpt_more($more)
 	return '...';
 }
 add_filter('excerpt_more', 'wpdocs_excerpt_more');
+
+// Adding Bootstrap Menu Class to Items
+add_filter('nav_menu_css_class', 'special_nav_class', 10, 2);
+function special_nav_class($classes, $item)
+{
+	$classes[] = 'nav-item';
+	return $classes;
+}
+
+// Adding Bootstrap Link Class to <a> Tags in Menu Items
+function add_menu_atts($atts, $item, $args)
+{
+	$atts['class'] = 'nav-link';
+	return $atts;
+}
+add_filter('nav_menu_link_attributes', 'add_menu_atts', 10, 3);

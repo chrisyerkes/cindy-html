@@ -19,4 +19,9 @@
 			margin-right: 0;
 		}
 	}
+	.navbar-nav  {
+		& + * {
+			@include margin-left(40px);
+		}
+	}
 }

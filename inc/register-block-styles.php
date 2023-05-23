@@ -18,10 +18,26 @@ function cindylau_register_block_styles()
 {
 
 	register_block_style(
-		'core/paragraph',
+		'core/button',
 		array(
-			'name'	=> 'cindylau-lead',
-			'label'	=> __('Lead', 'cindylau'),
+			'name'	=> 'cindylau-instagram',
+			'label'	=> __('Instagram Icon', 'cindylau'),
+		)
+	);
+
+	register_block_style(
+		'core/button',
+		array(
+			'name'	=> 'cindylau-linkedin',
+			'label'	=> __('Linkedin Icon', 'cindylau'),
+		)
+	);
+
+	register_block_style(
+		'core/button',
+		array(
+			'name'	=> 'cindylau-email',
+			'label'	=> __('Email Icon', 'cindylau'),
 		)
 	);
 }
