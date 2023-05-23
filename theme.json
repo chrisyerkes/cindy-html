@@ -119,129 +119,135 @@
 			"letterSpacing": false,
 			"fontFamilies": [
 				{
-					"fontFamily": "\"Futura\", sans-serif",
-					"name": "Futura",
-					"slug": "futura",
+					"fontFamily": "\"Figtree\", sans-serif",
+					"name": "Figtree",
+					"slug": "figtree",
 					"fontFace": [
 						{
-							"fontFamily": "Futura",
+							"fontFamily": "Figtree",
 							"fontWeight": "300",
 							"fontStyle": "normal",
 							"fontStretch": "normal",
 							"src": [
-								"file:./assets/fonts/FuturaPTLight.otf"
+								"file:./fonts/figtree-light-webfont.woff2"
 							]
 						},
 						{
-							"fontFamily": "Futura",
+							"fontFamily": "Figtree",
+							"fontWeight": "300",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [
+								"file:./fonts/figtree-lightitalic-webfont.woff2"
+							]
+						},
+						{
+							"fontFamily": "Figtree",
 							"fontWeight": "400",
 							"fontStyle": "normal",
 							"fontStretch": "normal",
 							"src": [
-								"file:./assets/fonts/FuturaPTBook.otf"
+								"file:./fonts/figtree-regular-webfont.woff2"
 							]
 						},
 						{
-							"fontFamily": "Futura",
+							"fontFamily": "Figtree",
+							"fontWeight": "400",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [
+								"file:./fonts/figtree-italic-webfont.woff2"
+							]
+						},
+						{
+							"fontFamily": "Figtree",
 							"fontWeight": "500",
 							"fontStyle": "normal",
 							"fontStretch": "normal",
 							"src": [
-								"file:./assets/fonts/FuturaPTMedium.otf"
+								"file:./fonts/figtree-medium-webfont.woff2"
 							]
 						},
 						{
-							"fontFamily": "Futura",
+							"fontFamily": "Figtree",
+							"fontWeight": "500",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [
+								"file:./fonts/figtree-mediumitalic-webfont.woff2"
+							]
+						},
+						{
+							"fontFamily": "Figtree",
+							"fontWeight": "600",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [
+								"file:./fonts/figtree-semibold-webfont.woff2"
+							]
+						},
+						{
+							"fontFamily": "Figtree",
+							"fontWeight": "600",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [
+								"file:./fonts/figtree-semibolditalic-webfont.woff2"
+							]
+						},
+						{
+							"fontFamily": "Figtree",
 							"fontWeight": "700",
 							"fontStyle": "normal",
 							"fontStretch": "normal",
 							"src": [
-								"file:./assets/fonts/FuturaPTBold.otf"
+								"file:./fonts/figtree-bold-webfont.woff2"
 							]
-						}
-					]
-				},
-				{
-					"fontFamily": "\"Lexend\", cursive",
-					"name": "Lexend",
-					"slug": "lexend",
-					"fontFace": [
-						{
-							"fontFamily": "Lexend",
-							"fontWeight": "300",
-							"fontStyle": "normal",
-							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/LexendDeca-Light.ttf" ]
 						},
 						{
-							"fontFamily": "Lexend",
-							"fontWeight": "400",
-							"fontStyle": "normal",
-							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/LexendDeca-Regular.ttf" ]
-						},
-						{
-							"fontFamily": "Lexend",
-							"fontWeight": "600",
-							"fontStyle": "normal",
-							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/LexendDeca-SemiBold.ttf" ]
-						},
-						{
-							"fontFamily": "Lexend",
+							"fontFamily": "Figtree",
 							"fontWeight": "700",
-							"fontStyle": "normal",
-							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/LexendDeca-Bold.ttf" ]
-						}
-					]
-				},
-				{
-					"fontFamily": "\"Literata\", sans-serif",
-					"name": "Literata",
-					"slug": "literata",
-					"fontFace": [
-						{
-							"fontFamily": "Literata",
-							"fontWeight": "300",
-							"fontStyle": "normal",
-							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/Literata-Light.ttf" ]
-						},
-						{
-							"fontFamily": "Literata",
-							"fontWeight": "300",
 							"fontStyle": "italic",
 							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/Literata-LightItalic.ttf" ]
+							"src": [
+								"file:./fonts/figtree-bolditalic-webfont.woff2"
+							]
 						},
 						{
-							"fontFamily": "Literata",
-							"fontWeight": "600",
-							"fontStyle": "normal",
-							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/Literata-SemiBold.ttf" ]
-						},
-						{
-							"fontFamily": "Literata",
-							"fontWeight": "600",
-							"fontStyle": "italic",
-							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/Literata-SemiBoldItalic.ttf" ]
-						},
-						{
-							"fontFamily": "Literata",
+							"fontFamily": "Figtree",
 							"fontWeight": "800",
 							"fontStyle": "normal",
 							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/Literata-Black.ttf" ]
+							"src": [
+								"file:./fonts/figtree-extrabold-webfont.woff2"
+							]
 						},
 						{
-							"fontFamily": "Literata",
+							"fontFamily": "Figtree",
 							"fontWeight": "800",
 							"fontStyle": "italic",
 							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/Literata-BlackItalic.ttf" ]
+							"src": [
+								"file:./fonts/figtree-extrabolditalic-webfont.woff2"
+							]
+						},
+						{
+							"fontFamily": "Figtree",
+							"fontWeight": "900",
+							"fontStyle": "normal",
+							"fontStretch": "normal",
+							"src": [
+								"file:./fonts/figtree-black-webfont.woff2"
+							]
+						},
+						{
+							"fontFamily": "Figtree",
+							"fontWeight": "900",
+							"fontStyle": "italic",
+							"fontStretch": "normal",
+							"src": [
+								"file:./fonts/figtree-blackitalic-webfont.woff2"
+							]
 						}
 					]
 				}
