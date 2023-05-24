@@ -1,9 +1,6 @@
 {
 	"version": 2,
 	"settings": {
-		"layout": {
-			"contentSize": "1200px"
-		},
 		"dimensions": {
 			"minHeight": true
 		},

@@ -103,6 +103,12 @@ $primary-sans: $font-family-sans-serif;
 // @import "theme/_theme-index";
 
 // Editor only styles
+.editor-styles-wrapper {
+	padding-left: 50px !important;
+	padding-right: 50px !important;
+}
+.edit-post-visual-editor__post-title-wrapper,
 .is-root-container {
-	
+	padding-left: 50px;
+	padding-right: 50px;
 }
