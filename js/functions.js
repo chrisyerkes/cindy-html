@@ -22,7 +22,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 	// Animated Separator
 	const footerSep = document.querySelector('.seperator-and-logo');
-	addClassOnScroll(footerSep);
+	if (footerSep) {
+		addClassOnScroll(footerSep);
+	}
 
 	// Rainbow Text Effect
 	const textRainbowElements = document.querySelectorAll('.text-rainbow');

@@ -17,8 +17,7 @@
 function cindylau_register_custom_blocks()
 {
 
-	// Custom YouTube embed block
-	// register_block_type(get_stylesheet_directory() . '/blocks/cindylau-testimonials-slider/block.json');
-
+	// Home Hero
+	register_block_type(get_stylesheet_directory() . '/blocks/cindylau-home-hero/block.json');
 }
 add_action('init', 'cindylau_register_custom_blocks');

@@ -10728,6 +10728,14 @@ a {
     margin-left: 2.5rem;
   }
 }
+@media (max-width: 991.98px) {
+  .main-menu .navbar-nav + * {
+    margin-left: 0;
+  }
+}
+.main-menu #menu-blank {
+  height: 0;
+}
 
 .white-wave-header + section {
   position: relative;
