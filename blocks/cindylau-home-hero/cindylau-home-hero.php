@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Event Feed Block Template.
+ * Event Home Hero Block Template.
  *
  * @param   array $block The block settings and attributes.
  * @param   string $content The block inner HTML (empty).
@@ -19,7 +19,7 @@ if (!empty($block['anchor'])) {
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$class_name = 'neiwpcc-event-feed';
+$class_name = 'white-wave-header big-hero home-hero';
 if (!empty($block['className'])) {
 	$class_name .= ' ' . $block['className'];
 }
@@ -37,87 +37,9 @@ if (!empty($block['textColor'])) {
 }
 
 // Load values and assign defaults.
-$events = tribe_get_events([
-	'start_date'			=> 'now',
-	'eventDisplay'		=> 'custom',
-	'posts_per_page'	=> 9
-]);
+$heroCopy = get_field('hero_copy');
 ?>
-<div <?php echo $anchor; ?>class="<?php echo esc_attr($class_name); ?>">
-	<?php if ($events) { ?>
-		<div class="splide">
-			<div class="splide__track">
-				<ul class="splide__list">
-					<?php foreach ($events as $event) {
-						$eID = $event->ID;
-						$pURL = tribe_get_event_link($eID);
-						$pTitle = $event->post_title;
-						$venue = tribe_get_venue_single_line_address($eID, false);
-						if ($venue) {
-							$location = $venue;
-						} else {
-							$location = 'TBD';
-						}
-						$allDay = tribe_event_is_all_day($eID);
-						$multiDay = tribe_event_is_multiday($eID);
-						if ($multiDay) {
-							$startDate = tribe_get_start_date($eID, false, 'F j');
-							$startTime = tribe_get_start_date($eID, false, 'g:iA');
-							$startDateTime = tribe_get_start_date($eID, false, 'Y-m-d');
-							$endDate = tribe_get_end_date($eID, false, 'j, Y');
-							$endTime = tribe_get_end_date($eID, false, 'g:iA');
-							$endDateTime = tribe_get_end_date($eID, false, 'Y-m-d');
-							$date = '<time datetime="' . $startDateTime . '">' . $startDate . '</time> - <time datetime="' . $endDateTime . '">' . $endDate . '</time>';
-						} else {
-							$startDate = tribe_get_start_date($eID, false, 'F j, Y');
-							$startTime = tribe_get_start_date($eID, false, 'g:iA');
-							$startDateTime = tribe_get_start_date($eID, false, 'Y-m-d');
-							$endDate = '';
-							$endDateTime = '';
-							$date = '<time datetime="' . $startDateTime . '">' . $startDate . '</time>';
-						}
-						$featImg = tribe_event_featured_image($eID, 'large', true, false);
-
-						if ($featImg) {
-							$imageID = get_post_thumbnail_id($eID);
-							$imageDetails = wp_get_attachment_image_src($imageID, 'large');
-							if ($imageDetails[3] == true) {
-								$image = get_the_post_thumbnail($eID, 'large');
-							}
-							// In case a default image is ever wanted in the future
-							//else {
-							// $image = '<img src="' . get_theme_file_uri() . '/images/liss-default-image_opt.png" />';
-							//$image = '[PLACEHOLDER IMAGE]';
-							//}
-						} else {
-							$imageID = '';
-							$imageDetails = '';
-							// $image = '<img src="' . get_theme_file_uri() . '/images/liss-default-image_opt.png" />';
-							$image = NULL;
-						}
-						echo '<li class="wp-block-post event-slide splide__slide">
-								<a href="' . $pURL . '" class="box-link stretched-link"></a>';
-						if ($image !== NULL) {
-							echo '<figure class="wp-block-post-featured-image">
-										' . $image . '
-									</figure>';
-						}
-						echo '<h2 class="wp-block-post-title">' . $pTitle . '</h2>
-								<div class="wp-block-post-date"><i class="fa-regular fa-calendar"></i> ' . $date . '</div>
-								<p class="location"><i class="fa-regular fa-clock"></i> ' . $startTime . '</p>
-								<p class="location"><i class="fa-regular fa-location-dot"></i> ' . $location . '</p>
-								<div class="wp-block-button is-style-neiwpcc-link-arrow-right"><a href="' . $pURL . '" class="wp-block-button__link wp-element-button">View Event Details</a></div>
-							</li>';
-					} ?>
-				</ul>
-			</div>
-		</div>
-	<?php } else {
-		echo '<p class="text-center">No events found.</p>';
-	} ?>
-</div>
-
-<section class="white-wave-header big-hero home-hero">
+<section <?php echo $anchor; ?>class="<?php echo esc_attr($class_name); ?>">
 	<div class="container">
 		<div class="row">
 			<div class="col d-flex flex-column justify-content-center align-items-center">
@@ -129,10 +51,9 @@ $events = tribe_get_events([
 						</svg>
 					</div>
 				</div>
-				<h1 class="text-center text-rainbow">
-					Cindy is a designer, illustrator, and educator
-					living and creating in the northeast.
-				</h1>
+				<?php if ($heroCopy) {
+					echo $heroCopy;
+				} ?>
 			</div>
 		</div>
 	</div>

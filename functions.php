@@ -80,7 +80,7 @@ function my_acf_json_save_point($path)
 }
 
 // Block variation example.
-// require_once get_theme_file_path('inc/register-block-variations.php');
+require_once get_theme_file_path('inc/register-block-variations.php');
 
 // Block style examples.
 require_once get_theme_file_path('inc/register-block-styles.php');
@@ -121,3 +121,35 @@ function add_menu_atts($atts, $item, $args)
 	return $atts;
 }
 add_filter('nav_menu_link_attributes', 'add_menu_atts', 10, 3);
+
+// Custom TinyMCE Styles
+// Callback function to insert 'styleselect' into the $buttons array
+function my_mce_buttons_2($buttons)
+{
+	array_unshift($buttons, 'styleselect');
+	return $buttons;
+}
+// Register our callback to the appropriate filter
+add_filter('mce_buttons_2', 'my_mce_buttons_2');
+
+// Reference this page for adding more styles: https://codex.wordpress.org/TinyMCE_Custom_Styles
+// Callback function to filter the MCE settings
+function my_mce_before_init_insert_formats($init_array)
+{
+	// Define the style_formats array
+	$style_formats = [
+		// Each array child is a format with it's own settings
+		[
+			'title' => 'Rainbow Text',
+			'inline' => 'span',
+			'classes' => 'is-style-cindylau-rainbow-text',
+			'wrapper' => true,
+		]
+	];
+	// Insert the array, JSON ENCODED, into 'style_formats'
+	$init_array['style_formats'] = json_encode($style_formats);
+
+	return $init_array;
+}
+// Attach callback to 'tiny_mce_before_init'
+add_filter('tiny_mce_before_init', 'my_mce_before_init_insert_formats');

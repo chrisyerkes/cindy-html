@@ -10927,26 +10927,26 @@ a {
   aspect-ratio: 610/404;
 }
 
-.text-rainbow span.default {
+.is-style-cindylau-rainbow-text span.default {
   color: inherit !important;
   -webkit-transition: 3s color ease-out;
   transition: 3s color ease-out;
   -webkit-transition-delay: 1s;
           transition-delay: 1s;
 }
-.text-rainbow span.color1 {
+.is-style-cindylau-rainbow-text span.color1 {
   color: #1F1223;
 }
-.text-rainbow span.color2 {
+.is-style-cindylau-rainbow-text span.color2 {
   color: #F090A8;
 }
-.text-rainbow span.color3 {
+.is-style-cindylau-rainbow-text span.color3 {
   color: #F2AE46;
 }
-.text-rainbow span.color4 {
+.is-style-cindylau-rainbow-text span.color4 {
   color: #7A9EB8;
 }
-.text-rainbow span.color5 {
+.is-style-cindylau-rainbow-text span.color5 {
   color: #85A8E9;
 }
 

@@ -27,7 +27,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	// Rainbow Text Effect
-	const textRainbowElements = document.querySelectorAll('.text-rainbow');
+	const textRainbowElements = document.querySelectorAll(
+		'.is-style-cindylau-rainbow-text'
+	);
 	const colorArray = ['color1', 'color2', 'color3', 'color4', 'color5'];
 
 	if (textRainbowElements) {

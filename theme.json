@@ -1,12 +1,8 @@
 {
 	"version": 2,
-	"supports": {
-		"align": ["wide", "full"]
-	},
 	"settings": {
 		"layout": {
-			"contentSize": "1200px",
-			"wideSize": "1400px"
+			"contentSize": "1200px"
 		},
 		"dimensions": {
 			"minHeight": true
