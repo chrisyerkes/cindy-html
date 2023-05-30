@@ -75,6 +75,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	if (badges) {
 		badges.forEach((badge) => {
 			badge.addEventListener('click', (e) => {
+				const sound = new Audio(
+					'/wp-content/themes/cindy-lau/js/sounds/Pop-sfx.mp3'
+				);
 				const coords = badge.getBoundingClientRect();
 				const viewportWidth =
 					window.innerWidth || document.documentElement.clientWidth;
@@ -108,6 +111,9 @@ document.addEventListener('DOMContentLoaded', function () {
 				}
 				badge.classList.add('jello-vertical');
 				setTimeout((e) => {
+					if (sound) {
+						sound.play();
+					}
 					fire(0.25, {
 						spread: 26,
 						startVelocity: 55,
@@ -134,6 +140,20 @@ document.addEventListener('DOMContentLoaded', function () {
 				setTimeout((e) => {
 					badge.classList.remove('jello-vertical');
 				}, 900);
+			});
+		});
+	}
+
+	// Block Sliders
+	const blockSliders = document.querySelectorAll('.block-carousel');
+	if (blockSliders) {
+		blockSliders.forEach((slider) => {
+			const newSlider = new Flickity(slider, {
+				pageDots: false,
+				prevNextButtons: false,
+				setGallerySize: false,
+				cellAlign: 'left',
+				contain: true,
 			});
 		});
 	}

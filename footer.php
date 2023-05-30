@@ -17,7 +17,7 @@
 		<div class="row justify-content-between footer-contact">
 			<div class="col-lg-7 text-center text-lg-start">
 				<p>
-					<span class="text-rainbow">For project inquiries or a quick chat feel free
+					<span class="is-style-cindylau-rainbow-text">For project inquiries or a quick chat feel free
 						to email:</span>
 					<a href="mailto:cindylatte06@gmail.com">cindylatte06@gmail.com</a>
 				</p>

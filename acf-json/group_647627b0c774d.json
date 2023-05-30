@@ -1,0 +1,57 @@
+{
+    "key": "group_647627b0c774d",
+    "title": "Block - 3 Project Grid",
+    "fields": [
+        {
+            "key": "field_64762a6dca7e1",
+            "label": "Select Projects",
+            "name": "select_projects",
+            "aria-label": "",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "project"
+            ],
+            "post_status": [
+                "publish"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "taxonomy"
+            ],
+            "return_format": "object",
+            "min": 1,
+            "max": 3,
+            "elements": [
+                "featured_image"
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/cindylau-three-column-projects"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1685465800
+}

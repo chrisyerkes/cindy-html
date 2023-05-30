@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Home Hero Block Template.
+ * Badge Hero Block Template.
  *
  * @param   array $block The block settings and attributes.
  * @param   string $content The block inner HTML (empty).
@@ -19,7 +19,7 @@ if (!empty($block['anchor'])) {
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$class_name = 'white-wave-header big-hero home-hero';
+$class_name = 'white-wave-header big-hero about-hero';
 if (!empty($block['className'])) {
 	$class_name .= ' ' . $block['className'];
 }
@@ -41,8 +41,18 @@ $heroCopy = get_field('hero_copy');
 ?>
 <section <?php echo $anchor; ?>class="<?php echo esc_attr($class_name); ?>">
 	<div class="container">
-		<div class="row">
-			<div class="col d-flex flex-column justify-content-center align-items-center">
+		<div class="row align-items-start">
+			<div class="col-3 badge-container">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/badge_branding.svg" class="svg badge01" alt="Branding" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/badge_web-ui-design.svg" class="svg badge02" alt="Web + UI Design" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/badge_education.svg" class="svg badge03" alt="Education" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/badge_print-design.svg" class="svg badge04" alt="Print Design" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/badge_bear.svg" class="svg badge05" alt="Bear" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/badge_bdays.png" class="svg badge06" alt="Remembers B-Days" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/badge_runner.svg" class="svg badge07" alt="Long Distance Runner" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/badge_rocket.svg" class="svg badge08" alt="Rocket" />
+			</div>
+			<div class="col-6 d-flex flex-column justify-content-center align-items-center">
 				<div class="logo-container">
 					<div class="logo-background-shape">
 						<svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" class="main-logo" viewBox="0 0 800 799.99">
@@ -54,6 +64,17 @@ $heroCopy = get_field('hero_copy');
 				<?php if ($heroCopy) {
 					echo $heroCopy;
 				} ?>
+			</div>
+			<div class="col-3 badge-container">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/badge_gemini.svg" class="svg badge09" alt="Gemini" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/badge_illustration.svg" class="svg badge10" alt="Illustration" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/badge_packaging.svg" class="svg badge11" alt="Packaging" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/badge_art-direction.svg" class="svg badge12" alt="Art Direction" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/badge_whale.svg" class="svg badge13" alt="Whale" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/badge_social-media.svg" class="svg badge14" alt="Social Media" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/badge_movie-buff.svg" class="svg badge15" alt="Movie Buff" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/badge_motion-graphics.svg" class="svg badge16" alt="Motion Graphics" />
+				<img src="<?php echo get_template_directory_uri(); ?>/images/badge_food.svg" class="svg badge17" alt="Food MM" />
 			</div>
 		</div>
 	</div>

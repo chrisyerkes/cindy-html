@@ -1,0 +1,18 @@
+.block-carousel-wrapper {
+	.block-carousel {
+		height: 400px;
+
+		.flickity-viewport {
+			overflow: visible;
+		}
+		.carousel-cell {
+			height: 100%;
+			@include padding-right(20px);
+
+			img {
+				height: 100%;
+				width: auto;
+			}
+		}
+	}
+}

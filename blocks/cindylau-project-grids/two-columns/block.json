@@ -1,0 +1,23 @@
+{
+	"name": "cindylau-two-column-projects",
+	"title": "Cindy Two Projects Grid Block",
+	"description": "Two projects grid.",
+	"category": "theme",
+	"icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\"><g fill=\"#000\"><path d=\"M2 5a3 3 0 0 1 3-3h6v20H5a3 3 0 0 1-3-3V5ZM13 22h6a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3h-6v20Z\"/></g></svg>",
+	"apiVersion": 2,
+	"keywords": [
+		"work",
+		"grid",
+		"projects"
+	],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "cindylau-projects-two-columns.php"
+	},
+	"supports": {
+		"align": false,
+		"anchor": true,
+		"alignContent": false,
+		"alignText": false
+	}
+}

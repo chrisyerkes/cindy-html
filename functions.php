@@ -55,7 +55,8 @@ add_action('after_theme_setup', 'cindylau_theme_setup');
 if (!function_exists('fse_styles')) {
 	function fse_styles()
 	{
-		wp_enqueue_style('fontawesome', 'https://kit.fontawesome.com/07e203ce75.js', array(), '1.0.0');
+		wp_enqueue_script('fontawesome-js', 'https://kit.fontawesome.com/07e203ce75.js', array(), '1.0.0');
+		wp_enqueue_style('flickity-style', get_theme_file_uri('/css/flickity.css'), array(), '2.3.0');
 		wp_enqueue_style(
 			'fse-style',
 			get_stylesheet_uri(),
@@ -64,7 +65,8 @@ if (!function_exists('fse_styles')) {
 		);
 
 		wp_enqueue_script('bootstrap-js', get_theme_file_uri('/js/bootstrap.bundle.min.js'), array(), '5.3.0', true);
-		// wp_enqueue_script('splide-js', get_theme_file_uri('/assets/js/splide.min.js'), array(), '4.1.4', true);
+		wp_enqueue_script('confetti-js', get_theme_file_uri('/js/confetti.js'), array(), '2.9.3', true);
+		wp_enqueue_script('flickity-js', get_theme_file_uri('/js/flickity.pkgd.min.js'), array(), '2.3.0', true);
 		wp_enqueue_script('functions-js', get_theme_file_uri('js/functions-dist.js'), array('bootstrap-js'), '1.0.0', true);
 	}
 }
@@ -92,7 +94,7 @@ require_once get_theme_file_path('inc/register-custom-blocks.php');
 require_once get_theme_file_path('inc/register-shortcodes.php');
 
 // Block pattern and block category examples.
-// require_once get_theme_file_path('inc/register-block-patterns.php');
+require_once get_theme_file_path('inc/register-block-patterns.php');
 
 /**
  * Filter the excerpt "read more" string.
