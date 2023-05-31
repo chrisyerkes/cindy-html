@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Title: Fixed Center Content Wrapper
+ * Title: NO OVERFLOW - Fixed Center Content Wrapper
  * Slug: cindylau/fixed-center-content-wrapper
  * Categories: text, image, cindy-theme
- * Description: Displays a content wrapper for use on pages
+ * Description: Displays a content wrapper for use on pages but stops any content from going past the edge of the browser window (aka overflow).
  * Keywords: text, content, wrapper, group
  * Block Types: core/group
  */

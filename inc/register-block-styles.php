@@ -26,6 +26,15 @@ function cindylau_register_block_styles()
 	);
 
 	register_block_style(
+		'core/group',
+		array(
+			'name'	=> 'cindylau-project-intro',
+			'label'	=> __('Project Intro', 'cindylau'),
+		)
+	);
+
+
+	register_block_style(
 		'core/button',
 		array(
 			'name'	=> 'cindylau-instagram',

@@ -1,3 +1,10 @@
+// Standard container
+.is-style-page-content {
+	figure {
+		@include margin-bottom(30px);
+	}
+}
+// No overflow container
 .is-style-cindylau-page-content {
 	@include padding-top(55px);
 	@include padding-bottom(320px);
@@ -18,5 +25,27 @@
 		&:hover {
 			color: $primary;
 		}
+	}
+}
+// Single project intro container
+.is-style-cindylau-project-intro {
+	@include padding-top(192px);
+	@include margin-bottom(90px);
+
+	h1 {
+		@include font-size(48px);
+		@include rfs(62.4px, line-height);
+		color: #000;
+		font-weight: $bold;
+	}
+}
+// Editor styles
+.is-root-container {
+	.is-style-cindylau-project-intro {
+		padding-top: 0;
+	}
+	.container {
+		padding-left: 0;
+		padding-right: 0;
 	}
 }

@@ -16,3 +16,13 @@
 		left: 0;
 	}
 }
+
+.single-project {
+	#MainHeader {
+		background-color: #fff;
+
+		&::after {
+			display: none;
+		}
+	}
+}

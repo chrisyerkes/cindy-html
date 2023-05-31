@@ -23,6 +23,9 @@ function cindylau_register_custom_blocks()
 	// Badge Hero
 	register_block_type(get_stylesheet_directory() . '/blocks/cindylau-badge-hero/block.json');
 
+	// Project Category List
+	register_block_type(get_stylesheet_directory() . '/blocks/cindylau-lists/single-project-categories/block.json');
+
 	// 3 Project Grid
 	register_block_type(get_stylesheet_directory() . '/blocks/cindylau-project-grids/three-columns/block.json');
 
