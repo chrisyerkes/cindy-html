@@ -10446,7 +10446,6 @@ a {
   background-color: white;
   position: relative;
   z-index: 10;
-  overflow: hidden;
 }
 @media (min-width: 1200px) {
   .is-style-cindylau-page-content {
@@ -10457,6 +10456,9 @@ a {
   .is-style-cindylau-page-content {
     padding-bottom: 20rem;
   }
+}
+.is-style-cindylau-page-content > .full-width-content-wrapper {
+  overflow: hidden;
 }
 .is-style-cindylau-page-content > *:last-child {
   margin-bottom: 0;
