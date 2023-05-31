@@ -20,10 +20,22 @@ document.addEventListener('DOMContentLoaded', function () {
 		// Start observing the element
 		observer.observe(element);
 	}
+
 	// Animated Separator
 	const footerSep = document.querySelector('.seperator-and-logo');
 	if (footerSep) {
 		addClassOnScroll(footerSep);
+	}
+
+	// Hero height, position sticky check
+	const hero = document.querySelector('.big-hero');
+	if (hero) {
+		const viewportHeight = window.innerHeight;
+		const heroHeight = hero.offsetHeight;
+
+		if (heroHeight > viewportHeight) {
+			hero.classList.add('unstuck');
+		}
 	}
 
 	// Rainbow Text Effect

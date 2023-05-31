@@ -11,4 +11,12 @@
 	& > *:last-child {
 		margin-bottom: 0;
 	}
+	a {
+		color: $copy;
+		text-decoration: underline;
+
+		&:hover {
+			color: $primary;
+		}
+	}
 }

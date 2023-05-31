@@ -44,50 +44,59 @@
 			}
 		}
 	}
-	&.social-nav-big-text {
-		flex-direction: column;
+}
+.is-style-cindylau-social-nav-big-text {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
 
-		li {
-			a {
-				@include font-size(48px);
-				@include rfs(62px, line-height);
-				font-weight: $medium;
-				// text-decoration: underline;
-				position: relative;
-				text-shadow: -4px 3px 0px #fff, 4px 3px 0px #fff, -4px 2px 0px #fff, 4px 2px 0px #fff;
+	li {
+		@include font-size(48px);
+		@include rfs(62px, line-height);
+		font-weight: $medium;
 
+		a {
+			text-decoration: none;
+			position: relative;
+			text-shadow: -4px 3px 0px #fff, 4px 3px 0px #fff, -4px 2px 0px #fff, 4px 2px 0px #fff;
+
+			&::after {
+				content: '';
+				width: 0;
+				height: 0;
+				border-bottom: 3px solid;
+				position: absolute;
+				left: 0;
+				bottom: 2px;
+				z-index: -1;
+				transition: 0.25s width;
+				will-change: width;
+			}
+
+			&:hover {
 				&::after {
-					content: '';
-					width: 0;
-					height: 0;
-					border-bottom: 3px solid;
-					position: absolute;
-					left: 0;
-					bottom: 2px;
-					z-index: -1;
-					transition: 0.25s width;
-					will-change: width;
-				}
-				&:hover {
-					&::after {
-						width: 100%;
-					}
+					width: 100%;
 				}
 			}
-			&.email {
-				a {
-					color: $color-1;
-				}
+		}
+
+		&.is-style-cindylau-email {
+			a {
+				color: $color-1;
 			}
-			&.instagram {
-				a {
-					color: $color-4;
-				}
+		}
+
+		&.is-style-cindylau-instagram {
+			a {
+				color: $color-4;
 			}
-			&.linkedin {
-				a {
-					color: $color-7;
-				}
+		}
+
+		&.is-style-cindylau-linkedin {
+			a {
+				color: $color-7;
 			}
 		}
 	}

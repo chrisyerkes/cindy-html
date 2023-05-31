@@ -23,17 +23,7 @@
 				</p>
 			</div>
 			<div class="col-lg-4 footer-social">
-				<ul class="social-nav social-nav-big-text text-center text-lg-start">
-					<li class="email">
-						<a href="#">Email</a>
-					</li>
-					<li class="instagram">
-						<a href="#">Instagram</a>
-					</li>
-					<li class="linkedin">
-						<a href="#">LinkedIn</a>
-					</li>
-				</ul>
+				<?php block_template_part('social-nav-links'); ?>
 			</div>
 		</div>
 		<div class="row footer-copyright">

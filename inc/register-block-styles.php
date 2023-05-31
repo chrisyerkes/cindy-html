@@ -48,5 +48,37 @@ function cindylau_register_block_styles()
 			'label'	=> __('Email Icon', 'cindylau'),
 		)
 	);
+
+	register_block_style(
+		'core/list-item',
+		array(
+			'name'	=> 'cindylau-instagram',
+			'label'	=> __('Instagram Color', 'cindylau'),
+		)
+	);
+
+	register_block_style(
+		'core/list-item',
+		array(
+			'name'	=> 'cindylau-linkedin',
+			'label'	=> __('Linkedin Color', 'cindylau'),
+		)
+	);
+
+	register_block_style(
+		'core/list-item',
+		array(
+			'name'	=> 'cindylau-email',
+			'label'	=> __('Email Color', 'cindylau'),
+		)
+	);
+
+	register_block_style(
+		'core/list',
+		array(
+			'name'	=> 'cindylau-social-nav-big-text',
+			'label'	=> __('Big Text', 'cindylau'),
+		)
+	);
 }
 add_action('init', 'cindylau_register_block_styles');

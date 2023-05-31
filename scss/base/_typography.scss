@@ -15,10 +15,32 @@ h1 {
 	@include rfs(62px, line-height);
 }
 
+h2 {
+	font-weight: $semi-bold;
+	@include font-size(48px);
+	@include rfs(50px, line-height);
+}
+
 h3 {
 	font-weight: $bold;
 	@include font-size(24px);
 	@include rfs(28px, line-height);
+}
+
+h4 {
+	font-weight: $semi-bold;
+	@include font-size(24px);
+	@include rfs(31.2px, line-height);
+	@include margin-bottom(30px);
+}
+
+h5 {
+	font-weight: $bold;
+	@include font-size(16px);
+	@include rfs(20px, line-height);
+	text-transform: uppercase;
+	letter-spacing: 3%;
+	@include margin-bottom(16px);
 }
 
 a {

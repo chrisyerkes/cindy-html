@@ -7,6 +7,9 @@
 	position: sticky;
 	z-index: 0;
 
+	&.unstuck {
+		position: static;
+	}
 	@include media-breakpoint-down(lg) {
 		br {
 			display: none;
