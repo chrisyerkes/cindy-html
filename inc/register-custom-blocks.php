@@ -32,6 +32,9 @@ function cindylau_register_custom_blocks()
 	// 2 Project Grid
 	register_block_type(get_stylesheet_directory() . '/blocks/cindylau-project-grids/two-columns/block.json');
 
+	// Full Width Gallery
+	register_block_type(get_stylesheet_directory() . '/blocks/cindylau-galleries/full-width-grid/block.json');
+
 	// Flickity Slider
 	register_block_type(get_stylesheet_directory() . '/blocks/cindylau-sliders/flickity/block.json');
 }

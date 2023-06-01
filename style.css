@@ -11923,4 +11923,26 @@ a {
   margin-bottom: 1.25rem;
   padding: 0;
 }
+
+.cindylau-full-width-gallery-grid {
+  padding: 0;
+  margin-bottom: calc(1.3125rem + 0.75vw);
+}
+@media (min-width: 1200px) {
+  .cindylau-full-width-gallery-grid {
+    margin-bottom: 1.875rem;
+  }
+}
+.cindylau-full-width-gallery-grid .gallery-item .gallery-item-wrap {
+  height: 100%;
+  overflow: hidden;
+}
+.cindylau-full-width-gallery-grid .gallery-item .gallery-item-wrap img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -o-object-position: center;
+     object-position: center;
+}
 /*# sourceMappingURL=style.css.map */
