@@ -2,6 +2,9 @@
 	@include margin-bottom(76px);
 
 	.identity-image {
+		img {
+			@include border-radius(10px);
+		}
 		@include media-breakpoint-down(md) {
 			@include margin-bottom(30px);
 		}
