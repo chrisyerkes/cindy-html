@@ -1,0 +1,9 @@
+.cindylau-logo-row {
+	@include margin-bottom(76px);
+
+	.identity-image {
+		@include media-breakpoint-down(md) {
+			@include margin-bottom(30px);
+		}
+	}
+}

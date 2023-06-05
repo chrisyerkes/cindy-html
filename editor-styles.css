@@ -11450,6 +11450,98 @@ a {
      object-position: center;
 }
 
+.is-root-container .gallery-items-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  -ms-grid-columns: 1fr var(--bs-gap) 1fr var(--bs-gap) 1fr var(--bs-gap) 1fr var(--bs-gap) 1fr var(--bs-gap) 1fr var(--bs-gap) 1fr var(--bs-gap) 1fr var(--bs-gap) 1fr var(--bs-gap) 1fr var(--bs-gap) 1fr var(--bs-gap) 1fr;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--bs-gap);
+}
+
+.is-root-container .gallery-items-wrap > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.is-root-container .gallery-items-wrap > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.is-root-container .gallery-items-wrap > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.is-root-container .gallery-items-wrap > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+
+.is-root-container .gallery-items-wrap > *:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 9;
+}
+
+.is-root-container .gallery-items-wrap > *:nth-child(6) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 11;
+}
+
+.is-root-container .gallery-items-wrap > *:nth-child(7) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 13;
+}
+
+.is-root-container .gallery-items-wrap > *:nth-child(8) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 15;
+}
+
+.is-root-container .gallery-items-wrap > *:nth-child(9) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 17;
+}
+
+.is-root-container .gallery-items-wrap > *:nth-child(10) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 19;
+}
+
+.is-root-container .gallery-items-wrap > *:nth-child(11) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 21;
+}
+
+.is-root-container .gallery-items-wrap > *:nth-child(12) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 23;
+}
+.is-root-container .gallery-items-wrap .gallery-item {
+  grid-column: auto/span 4;
+}
+
+.cindylau-logo-row {
+  margin-bottom: calc(1.6rem + 4.2vw);
+}
+@media (min-width: 1200px) {
+  .cindylau-logo-row {
+    margin-bottom: 4.75rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .cindylau-logo-row .identity-image {
+    margin-bottom: calc(1.3125rem + 0.75vw);
+  }
+}
+@media (max-width: 767.98px) and (min-width: 1200px) {
+  .cindylau-logo-row .identity-image {
+    margin-bottom: 1.875rem;
+  }
+}
+
 .editor-styles-wrapper {
   padding-left: 50px !important;
   padding-right: 50px !important;
