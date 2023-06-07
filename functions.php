@@ -155,3 +155,15 @@ function my_mce_before_init_insert_formats($init_array)
 }
 // Attach callback to 'tiny_mce_before_init'
 add_filter('tiny_mce_before_init', 'my_mce_before_init_insert_formats');
+
+// Register Options Pages
+if (
+	function_exists('acf_add_options_page')
+) {
+
+	acf_add_options_sub_page(array(
+		'page_title'     => 'Project Template Options',
+		'menu_title'     => 'Project Template Options',
+		'parent_slug'    => 'edit.php?post_type=project',
+	));
+}

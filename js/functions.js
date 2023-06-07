@@ -169,4 +169,60 @@ document.addEventListener('DOMContentLoaded', function () {
 			});
 		});
 	}
+
+	// trackMouse();
+	function followMouse() {
+		const backToWorkDiv = document.querySelector('.back-to-work');
+		const mousePointerDiv = document.querySelector('.mouse-pointer');
+
+		if (navigator.maxTouchPoints > 0) {
+			mousePointerDiv.classList.add('no-mouse');
+			return;
+		}
+
+		let hovering = false;
+		let initTimer;
+
+		backToWorkDiv.addEventListener('mouseenter', (e) => {
+			hovering = true;
+			clearTimeout(initTimer);
+			setTimeout(() => {
+				mousePointerDiv.classList.remove('init');
+				mousePointerDiv.classList.add('hovering');
+			}, 150);
+		});
+
+		backToWorkDiv.addEventListener('mouseleave', (e) => {
+			hovering = false;
+			mousePointerDiv.classList.remove('hovering');
+			clearTimeout(initTimer);
+			initTimer = setTimeout(() => {
+				mousePointerDiv.classList.add('init');
+				mousePointerDiv.removeAttribute('style');
+			}, 1000);
+		});
+
+		backToWorkDiv.addEventListener('mousemove', function (event) {
+			const rect = backToWorkDiv.getBoundingClientRect();
+			const mouseX = event.clientX - rect.left;
+			const mouseY = event.clientY - rect.top;
+
+			// Check if the mouse is within the confines of the back-to-work div
+			if (
+				mouseX >= 0 &&
+				mouseY >= 0 &&
+				mouseX <= rect.width &&
+				mouseY <= rect.height &&
+				hovering == true
+			) {
+				clearTimeout(initTimer);
+				setTimeout(() => {
+					mousePointerDiv.style.left = mouseX + 'px';
+					mousePointerDiv.style.top = mouseY + 'px';
+				}, 100);
+			}
+		});
+	}
+
+	followMouse();
 });

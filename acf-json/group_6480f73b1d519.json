@@ -1,0 +1,41 @@
+{
+    "key": "group_6480f73b1d519",
+    "title": "Project Template Options",
+    "fields": [
+        {
+            "key": "field_6480f73b927aa",
+            "label": "Back to Work Link",
+            "name": "back_to_work_link",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "Select the page you would like the \"Back to Work\" link to go to when clicked on a project page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-project-template-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1686173639
+}

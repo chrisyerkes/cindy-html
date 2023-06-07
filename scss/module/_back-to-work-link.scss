@@ -1,0 +1,74 @@
+.back-to-work {
+	position: relative;
+	height: 525px;
+	z-index: 100;
+
+	.mouse-pointer {
+		opacity: 0;
+		width: 144px;
+		height: 144px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		cursor: pointer;
+		transition: 0.1s opacity, 0.5s transform;
+
+		&.init {
+			opacity: 1;
+		}
+		&.no-mouse {
+			opacity: 1;
+			left: 50%;
+			top: 50%;
+		}
+		a {
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			text-align: center;
+			z-index: 10;
+			transform: translate(-50%, -50%) rotate(-10deg);
+			text-decoration: none;
+			color: #2a2927;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 27px;
+
+			&::after {
+				content: '';
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='1em' viewBox='0 0 448 512'%3E%3C!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.--%3E%3Cpath d='M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H109.3l105.3-105.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z'/%3E%3C/svg%3E");
+				position: absolute;
+				width: 26px;
+				height: 28px;
+				background-repeat: no-repeat;
+				background-size: contain;
+				left: 66px;
+				bottom: 10px;
+				transform: rotate(1deg);
+			}
+		}
+	
+		&::before {
+			content: '';
+			background-color: #bddcf2;
+			border-radius: 100%;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 5px;
+			left: 4px;
+			z-index: 5;
+			transform: translate(-50%, -50%);
+		}
+	
+		&.hovering {
+			opacity: 1;
+		}
+	}
+}
