@@ -1,6 +1,9 @@
 .project-grid {
 	@include margin-bottom(55px);
 
+	@include media-breakpoint-down(lg) {
+		margin-bottom: 1.25rem;
+	}
 	.project {
 		position: relative;
 		

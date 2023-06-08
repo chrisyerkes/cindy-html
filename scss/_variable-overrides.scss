@@ -1,0 +1,36 @@
+// Colors
+$color-1: #FF5E5B;
+$color-2: #F7D1D6;
+$color-3: #DDC1F8;
+$color-4: #F090A8;
+$color-5: #BCB9F9;
+$color-6: #F4B89F;
+$color-7: #85A8E9;
+$color-7-svg: '85A8E9';
+$color-8: #5C8078;
+
+$accent-1: #FFE2E6;
+$accent-1-svg: 'FFE2E6';
+$accent-2: #ED6D32;
+$accent-3: #794E69;
+$accent-4: #F2AE46;
+$accent-5: #7A9EB8;
+$accent-6: #BDDCF2;
+$accent-6-svg: 'BDDCF2';
+
+$copy: #1F1223;
+
+$primary: $color-1;
+$secondary: $color-2;
+
+$body-color: $copy;
+$logo-bg-color: #2A2927;
+$home-hero-bg-color: $accent-1;
+$footer-bg-color: #fff;
+
+// Type
+$font-family-sans-serif: 'Figtree', sans-serif;
+$primary-sans: $font-family-sans-serif;
+
+// Options
+$enable-cssgrid: true;

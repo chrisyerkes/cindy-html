@@ -3,6 +3,23 @@
 // For confetti pop effect on badges
 
 document.addEventListener('DOMContentLoaded', function () {
+	const navbarToggler = document.querySelector('.navbar-toggler');
+	const mainNav = document.querySelector('#navbarSupportedContent');
+	const mobileClose = document.querySelector('.close-mobile-nav');
+	const mainHeader = document.querySelector('#MainHeader');
+	if (mainNav && mobileClose) {
+		const bsCollapse = new bootstrap.Collapse(mainNav, { toggle: false });
+
+		if (navbarToggler && mainHeader) {
+			navbarToggler.addEventListener('click', (e) => {
+				mainHeader.classList.toggle('open');
+			});
+			mobileClose.addEventListener('click', (e) => {
+				mainHeader.classList.toggle('open');
+				bsCollapse.toggle();
+			});
+		}
+	}
 	// Intersection observer trigger function
 	function addClassOnScroll(element) {
 		const observer = new IntersectionObserver((entries) => {
@@ -87,9 +104,20 @@ document.addEventListener('DOMContentLoaded', function () {
 	if (badges) {
 		badges.forEach((badge) => {
 			badge.addEventListener('click', (e) => {
-				const sound = new Audio(
-					'/wp-content/themes/cindy-lau/js/sounds/Pop-sfx.mp3'
-				);
+				// const sound = new Audio(
+				// 	'/wp-content/themes/cindy-lau/js/sounds/Pop-sfx.mp3'
+				// );
+				const sounds = [
+					'/wp-content/themes/cindy-lau/js/sounds/Pop-sfx.mp3',
+					'/wp-content/themes/cindy-lau/js/sounds/Pop2-sfx.mp3',
+					'/wp-content/themes/cindy-lau/js/sounds/Pop3-sfx.mp3',
+				];
+
+				// Select a random sound from the array
+				const randomSound =
+					sounds[Math.floor(Math.random() * sounds.length)];
+
+				const sound = new Audio(randomSound);
 				const coords = badge.getBoundingClientRect();
 				const viewportWidth =
 					window.innerWidth || document.documentElement.clientWidth;
@@ -170,7 +198,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 	}
 
-	// trackMouse();
 	function followMouse() {
 		const backToWorkDiv = document.querySelector('.back-to-work');
 		const mousePointerDiv = document.querySelector('.mouse-pointer');
@@ -223,6 +250,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 	}
-
-	followMouse();
+	const isProject = document.querySelector('.single-project');
+	if (isProject) {
+		followMouse();
+	}
 });
