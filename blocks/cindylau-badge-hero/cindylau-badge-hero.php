@@ -42,7 +42,7 @@ $heroCopy = get_field('hero_copy');
 <section <?php echo $anchor; ?>class="<?php echo esc_attr($class_name); ?>">
 	<div class="container">
 		<div class="row align-items-start">
-			<div class="col-3 badge-container">
+			<div class="col-lg-3 badge-container">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/badge_branding.svg" class="svg badge01" alt="Branding" />
 				<img src="<?php echo get_template_directory_uri(); ?>/images/badge_web-ui-design.svg" class="svg badge02" alt="Web + UI Design" />
 				<img src="<?php echo get_template_directory_uri(); ?>/images/badge_education.svg" class="svg badge03" alt="Education" />
@@ -52,7 +52,7 @@ $heroCopy = get_field('hero_copy');
 				<img src="<?php echo get_template_directory_uri(); ?>/images/badge_runner.svg" class="svg badge07" alt="Long Distance Runner" />
 				<img src="<?php echo get_template_directory_uri(); ?>/images/badge_rocket.svg" class="svg badge08" alt="Rocket" />
 			</div>
-			<div class="col-6 d-flex flex-column justify-content-center align-items-center">
+			<div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
 				<div class="logo-container">
 					<div class="logo-background-shape">
 						<svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" class="main-logo" viewBox="0 0 800 799.99">
@@ -65,7 +65,7 @@ $heroCopy = get_field('hero_copy');
 					echo $heroCopy;
 				} ?>
 			</div>
-			<div class="col-3 badge-container">
+			<div class="col-lg-3 badge-container">
 				<img src="<?php echo get_template_directory_uri(); ?>/images/badge_gemini.svg" class="svg badge09" alt="Gemini" />
 				<img src="<?php echo get_template_directory_uri(); ?>/images/badge_illustration.svg" class="svg badge10" alt="Illustration" />
 				<img src="<?php echo get_template_directory_uri(); ?>/images/badge_packaging.svg" class="svg badge11" alt="Packaging" />

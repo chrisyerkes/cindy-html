@@ -7,6 +7,9 @@
 	position: sticky;
 	z-index: 0;
 
+	@include media-breakpoint-down(md) {
+		@include padding-top(170px);
+	}
 	&.unstuck {
 		position: static;
 	}
@@ -15,7 +18,6 @@
 			display: none;
 		}
 	}
-
 	h1 {
 		@include padding-left(150px);
 		@include padding-right(150px);
@@ -30,12 +32,25 @@
 		@include padding-bottom(50px);
 
 		.logo-background-shape {
-			height: 180px;
+			// height: 180px;
+			@include rfs(180px, height);
 
 			svg {
-				width: 180px;
-				height: 180px;
+				// width: 180px;
+				// height: 180px;
+				@include rfs(180px, width);
+				@include rfs(180px, height);
 				transform: rotate(-10deg);
+			}
+		}
+	}
+	&.about-hero {
+		.logo-container {
+			@include media-breakpoint-down(lg) {
+				transform: translateY(-190px);
+			}
+			@include media-breakpoint-down(md) {
+				transform: translateY(-160px);
 			}
 		}
 	}

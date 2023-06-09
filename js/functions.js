@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				mainHeader.classList.toggle('open');
 			});
 			mobileClose.addEventListener('click', (e) => {
+				e.preventDefault();
 				mainHeader.classList.toggle('open');
 				bsCollapse.toggle();
 			});

@@ -26,7 +26,7 @@
 			left: 0;
 			top: -50px;
 
-			@include media-breakpoint-down(xl) {
+			@include media-breakpoint-up(lg) {
 				top: -120px;
 			}
 			.logo-animation-container {
@@ -39,6 +39,9 @@
 					transform: translateX(0) rotate(0);
 					transition: 3s transform;
 
+					@include media-breakpoint-down(lg) {
+						width: 100px;
+					}
 					svg {
 						transform: rotate(0);
 						transition: 3s transform;
@@ -54,6 +57,9 @@
 				.logo-animation-container {
 					transform: translateX(calc(100% - 180px));
 
+					@include media-breakpoint-down(lg) {
+						transform: translateX(calc(100% - 100px));
+					}
 					.logo-background-shape {
 						// transform: translateX(-62px) rotate(540deg);
 						transform: translateX(-62px);
@@ -117,7 +123,9 @@
 		}
 		.is-style-cindylau-social-nav-big-text {
 			li {
-				text-align: center;
+				@include media-breakpoint-down(lg) {
+					text-align: center;
+				}
 			}
 			a {
 				@include media-breakpoint-down(lg) {
