@@ -11178,6 +11178,11 @@ a {
   position: relative;
   text-shadow: -4px 3px 0px #fff, 4px 3px 0px #fff, -4px 2px 0px #fff, 4px 2px 0px #fff;
 }
+@media (max-width: 991.98px) {
+  #MainFooter .footer-contact p a {
+    text-shadow: -4px 2px 0px #fff, 4px 2px 0px #fff, -4px 1px 0px #fff, 4px 1px 0px #fff;
+  }
+}
 #MainFooter .footer-contact p a::after {
   content: "";
   width: 0;
@@ -11191,8 +11196,37 @@ a {
   transition: 0.25s width;
   will-change: width;
 }
+@media (max-width: 991.98px) {
+  #MainFooter .footer-contact p a::after {
+    width: 100%;
+    bottom: 1px;
+  }
+}
 #MainFooter .footer-contact p a:hover::after {
   width: 100%;
+}
+@media (max-width: 991.98px) {
+  #MainFooter .footer-social {
+    padding-top: calc(1.3125rem + 0.75vw);
+  }
+}
+@media (max-width: 991.98px) and (min-width: 1200px) {
+  #MainFooter .footer-social {
+    padding-top: 1.875rem;
+  }
+}
+#MainFooter .footer-social .is-style-cindylau-social-nav-big-text li {
+  text-align: center;
+}
+@media (max-width: 991.98px) {
+  #MainFooter .footer-social .is-style-cindylau-social-nav-big-text a {
+    text-shadow: -4px 2px 0px #fff, 4px 2px 0px #fff, -4px 1px 0px #fff, 4px 1px 0px #fff;
+  }
+}
+@media (max-width: 991.98px) {
+  #MainFooter .footer-social .is-style-cindylau-social-nav-big-text a::after {
+    width: 100%;
+  }
 }
 #MainFooter .footer-copyright p a {
   color: #1F1223;

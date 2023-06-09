@@ -81,7 +81,10 @@
 				// text-decoration: underline;
 				position: relative;
 				text-shadow: -4px 3px 0px #fff, 4px 3px 0px #fff, -4px 2px 0px #fff, 4px 2px 0px #fff;
-			
+				
+				@include media-breakpoint-down(lg) {
+					text-shadow: -4px 2px 0px #fff, 4px 2px 0px #fff, -4px 1px 0px #fff, 4px 1px 0px #fff;
+				}
 				&::after {
 					content: '';
 					width: 0;
@@ -93,10 +96,35 @@
 					z-index: -1;
 					transition: 0.25s width;
 					will-change: width;
+
+					@include media-breakpoint-down(lg) {
+						width: 100%;
+						bottom: 1px;
+					}
 				}
 			
 				&:hover {
 					&::after {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	.footer-social {
+		@include media-breakpoint-down(lg) {
+			@include padding-top(30px);
+		}
+		.is-style-cindylau-social-nav-big-text {
+			li {
+				text-align: center;
+			}
+			a {
+				@include media-breakpoint-down(lg) {
+					text-shadow: -4px 2px 0px #fff, 4px 2px 0px #fff, -4px 1px 0px #fff, 4px 1px 0px #fff;
+				}
+				&::after {
+					@include media-breakpoint-down(lg) {
 						width: 100%;
 					}
 				}
