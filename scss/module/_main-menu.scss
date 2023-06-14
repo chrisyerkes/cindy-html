@@ -63,7 +63,7 @@
 				background-size: contain;
 				background-position: center 35%;
 				margin: 0 auto;
-				@include padding-top(200px);
+				@include padding-top(300px);
 			}
 			@include media-breakpoint-down(md) {
 				display: block;
@@ -83,7 +83,7 @@
 	}
 	.navbar-nav  {
 		@include media-breakpoint-down(md) {
-			@include padding-top(130px);
+			@include padding-top(200px);
 		}
 		& + * {
 			@include margin-left(40px);

@@ -9,6 +9,9 @@
 		pointer-events: none;
 		@include margin-bottom(90px);
 
+		@include media-breakpoint-down(sm) {
+			@include margin-bottom(190px);
+		}
 		&::before {
 			content: '';
 			background-size: cover;
@@ -24,10 +27,10 @@
 			overflow: hidden;
 			width: 100%;
 			left: 0;
-			top: -50px;
+			top: -45px;
 
 			@include media-breakpoint-up(lg) {
-				top: -120px;
+				top: -90px;
 			}
 			.logo-animation-container {
 				transform: translateX(0);
@@ -108,8 +111,9 @@
 						bottom: 1px;
 					}
 				}
-			
 				&:hover {
+					color: $color-1;
+
 					&::after {
 						width: 100%;
 					}

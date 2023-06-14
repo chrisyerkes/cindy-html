@@ -11154,6 +11154,21 @@ a {
     padding-top: 4.0625rem;
   }
 }
+@media (max-width: 991.98px) {
+  #MainHeader {
+    padding-top: calc(1.28125rem + 0.375vw);
+  }
+}
+@media (max-width: 991.98px) and (min-width: 1200px) {
+  #MainHeader {
+    padding-top: 1.5625rem;
+  }
+}
+@media (max-width: 575.98px) {
+  #MainHeader {
+    padding-top: 0;
+  }
+}
 #MainHeader::after {
   content: "";
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' style='enable-background:new 0 0 1440 16.5' viewBox='0 0 1440 16.5'%3E%3Cpath d='M864 0H0v4.6c3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.7-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1s6.4-1.6 8.3-3.1c1.7-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1s6.4-1.6 8.3-3.1c1.7-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1s6.4-1.6 8.3-3.1c1.8-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1s6.4-1.6 8.3-3.1c1.8-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4s4.3 1 6.1 2.4c1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4s4.3 1 6.1 2.4c1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.7-1.3 3.1-2.4 6.1-2.4s4.3 1 6.1 2.4c1.9 1.5 4.1 3.1 8.3 3.1s6.4-1.6 8.3-3.1c1.7-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4s4.3 1 6.1 2.4c1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.7-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 2 1.5 4.1 3.1 8.4 3.1 4.2 0 6.4-1.6 8.3-3.1 1.7-1.3 3.1-2.4 6.1-2.4 3 0 4.4 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1s6.4-1.6 8.3-3.1c1.7-1.3 3.1-2.4 6.1-2.4s4.3 1 6.1 2.4c1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.7-1.3 3.1-2.4 6.1-2.4 3 0 4.4 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1s6.4-1.6 8.3-3.1c1.7-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.7-1.3 3.1-2.4 6-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.7-1.3 3.1-2.4 6.1-2.4s4.3 1 6.1 2.4c1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1s6.4-1.6 8.3-3.1c1.8-1.3 3.1-2.4 6.1-2.4s4.3 1 6.1 2.4c1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.7-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1s6.4-1.6 8.3-3.1c1.7-1.3 3.1-2.4 6.1-2.4s4.3 1 6.1 2.4c1.9 1.5 4.1 3.1 8.3 3.1s6.4-1.6 8.3-3.1c1.8-1.3 3.1-2.4 6.1-2.4s4.3 1 6.1 2.4c1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4s4.3 1 6.1 2.4c1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4s4.3 1 6.1 2.4c1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4s4.3 1 6.1 2.4c1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1s6.4-1.6 8.3-3.1c1.8-1.3 3.1-2.4 6.1-2.4s4.3 1 6.1 2.4c1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4s4.3 1 6.1 2.4c1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4s4.3 1 6.1 2.4c1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4s4.3 1 6.1 2.4c1.9 1.5 4.1 3.1 8.3 3.1s6.4-1.6 8.3-3.1c1.8-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.8-1.3 3.1-2.4 6.1-2.4 3 0 4.3 1 6.1 2.4 1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.7-1.3 3.1-2.4 6.1-2.4s4.3 1 6.1 2.4c1.9 1.5 4.1 3.1 8.3 3.1 4.2 0 6.4-1.6 8.3-3.1 1.7-1.3 3.1-2.4 6.1-2.4V0H864z' style='fill:%23FFE2E6'/%3E%3C/svg%3E");
@@ -11175,11 +11190,11 @@ a {
 }
 
 .is-style-page-content figure {
-  margin-bottom: calc(1.3125rem + 0.75vw);
+  margin-bottom: calc(1.625rem + 4.5vw);
 }
 @media (min-width: 1200px) {
   .is-style-page-content figure {
-    margin-bottom: 1.875rem;
+    margin-bottom: 5rem;
   }
 }
 
@@ -11275,6 +11290,16 @@ a {
     margin-bottom: 5.625rem;
   }
 }
+@media (max-width: 575.98px) {
+  #MainFooter .seperator-and-logo {
+    margin-bottom: calc(2.3125rem + 12.75vw);
+  }
+}
+@media (max-width: 575.98px) and (min-width: 1200px) {
+  #MainFooter .seperator-and-logo {
+    margin-bottom: 11.875rem;
+  }
+}
 #MainFooter .seperator-and-logo::before {
   content: "";
   background-size: cover;
@@ -11290,11 +11315,11 @@ a {
   overflow: hidden;
   width: 100%;
   left: 0;
-  top: -50px;
+  top: -45px;
 }
 @media (min-width: 992px) {
   #MainFooter .seperator-and-logo .logo-container {
-    top: -120px;
+    top: -90px;
   }
 }
 #MainFooter .seperator-and-logo .logo-container .logo-animation-container {
@@ -11402,6 +11427,9 @@ a {
     width: 100%;
     bottom: 1px;
   }
+}
+#MainFooter .footer-contact p a:hover {
+  color: #FF5E5B;
 }
 #MainFooter .footer-contact p a:hover::after {
   width: 100%;
@@ -11641,11 +11669,11 @@ a {
   background-size: contain;
   background-position: center 35%;
   margin: 0 auto;
-  padding-top: calc(2.375rem + 13.5vw);
+  padding-top: calc(3rem + 21vw);
 }
 @media (min-width: 1200px) {
   .main-menu .nav-item.close-mobile-nav .nav-link {
-    padding-top: 12.5rem;
+    padding-top: 18.75rem;
   }
 }
 @media (max-width: 767.98px) {
@@ -11665,12 +11693,12 @@ a {
 }
 @media (max-width: 767.98px) {
   .main-menu .navbar-nav {
-    padding-top: calc(1.9375rem + 8.25vw);
+    padding-top: calc(2.375rem + 13.5vw);
   }
 }
 @media (max-width: 767.98px) and (min-width: 1200px) {
   .main-menu .navbar-nav {
-    padding-top: 8.125rem;
+    padding-top: 12.5rem;
   }
 }
 .main-menu .navbar-nav + * {
@@ -11798,6 +11826,45 @@ a {
   .big-hero .logo-container .logo-background-shape svg {
     height: 11.25rem;
   }
+}
+.big-hero.about-hero h4, .big-hero.about-hero .h4 {
+  font-weight: 400;
+}
+.big-hero.about-hero h4 a, .big-hero.about-hero .h4 a {
+  position: relative;
+  text-shadow: 1px 1px 0px #FFE2E6, -1px 1px 0px #FFE2E6, -1px 2px 0px #FFE2E6, 2px 2px 0px #FFE2E6, 0px 2px 0px #FFE2E6, 1px 2px 0px #FFE2E6;
+}
+@media (max-width: 767.98px) {
+  .big-hero.about-hero h4 a, .big-hero.about-hero .h4 a {
+    text-shadow: none;
+  }
+  .big-hero.about-hero h4 a:hover, .big-hero.about-hero .h4 a:hover {
+    text-decoration: underline !important;
+  }
+}
+.big-hero.about-hero h4 a::after, .big-hero.about-hero .h4 a::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 2px solid;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  -webkit-transition: 0.25s width;
+  transition: 0.25s width;
+  will-change: width;
+}
+@media (max-width: 767.98px) {
+  .big-hero.about-hero h4 a::after, .big-hero.about-hero .h4 a::after {
+    display: none;
+  }
+}
+.big-hero.about-hero h4 a:hover, .big-hero.about-hero .h4 a:hover {
+  color: #FF5E5B;
+}
+.big-hero.about-hero h4 a:hover::after, .big-hero.about-hero .h4 a:hover::after {
+  width: 100%;
 }
 @media (max-width: 991.98px) {
   .big-hero.about-hero .logo-container {

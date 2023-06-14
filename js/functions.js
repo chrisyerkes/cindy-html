@@ -104,21 +104,26 @@ document.addEventListener('DOMContentLoaded', function () {
 	const badges = document.querySelectorAll('.badge-container .svg');
 	if (badges) {
 		badges.forEach((badge) => {
+			// Shuffle the sounds array in place using the Fisher-Yates algorithm
+			function shuffle(array) {
+				for (let i = array.length - 1; i > 0; i--) {
+					const j = Math.floor(Math.random() * (i + 1));
+					[array[i], array[j]] = [array[j], array[i]];
+				}
+			}
+			const sounds = [
+				'/wp-content/themes/cindy-lau/js/sounds/Pop-sfx.mp3',
+				'/wp-content/themes/cindy-lau/js/sounds/Pop2-sfx.mp3',
+				'/wp-content/themes/cindy-lau/js/sounds/Pop3-sfx.mp3',
+			];
+
+			shuffle(sounds);
+
+			// Initialize index to keep track of the current sound
+			let currentSoundIndex = 0;
+
 			badge.addEventListener('click', (e) => {
-				// const sound = new Audio(
-				// 	'/wp-content/themes/cindy-lau/js/sounds/Pop-sfx.mp3'
-				// );
-				const sounds = [
-					'/wp-content/themes/cindy-lau/js/sounds/Pop-sfx.mp3',
-					'/wp-content/themes/cindy-lau/js/sounds/Pop2-sfx.mp3',
-					'/wp-content/themes/cindy-lau/js/sounds/Pop3-sfx.mp3',
-				];
-
-				// Select a random sound from the array
-				const randomSound =
-					sounds[Math.floor(Math.random() * sounds.length)];
-
-				const sound = new Audio(randomSound);
+				const sound = new Audio(sounds[currentSoundIndex]);
 				const coords = badge.getBoundingClientRect();
 				const viewportWidth =
 					window.innerWidth || document.documentElement.clientWidth;
@@ -154,6 +159,16 @@ document.addEventListener('DOMContentLoaded', function () {
 				setTimeout((e) => {
 					if (sound) {
 						sound.play();
+
+						// Increment the current sound index
+						currentSoundIndex++;
+
+						// Reset the current sound index if it exceeds the length of the array
+						if (currentSoundIndex >= sounds.length) {
+							// Shuffle the sounds array again
+							shuffle(sounds);
+							currentSoundIndex = 0;
+						}
 					}
 					fire(0.25, {
 						spread: 26,
