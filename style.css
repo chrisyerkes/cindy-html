@@ -12361,6 +12361,21 @@ a {
     top: 188px;
   }
 }
+.badge-container .badge02 {
+  left: 21%;
+}
+.badge-container .badge03 {
+  left: 10%;
+}
+.badge-container .badge04 {
+  right: 5%;
+}
+.badge-container .badge05 {
+  left: 35%;
+}
+.badge-container .badge06 {
+  left: 49%;
+}
 .badge-container .badge09 {
   right: 0;
   top: 160px;
@@ -12506,6 +12521,21 @@ a {
     right: -18px;
     top: -3px;
   }
+}
+.badge-container .badge11 {
+  left: 11%;
+}
+.badge-container .badge12 {
+  left: 24%;
+}
+.badge-container .badge13 {
+  right: 23%;
+}
+.badge-container .badge14 {
+  left: 37%;
+}
+.badge-container .badge16 {
+  right: 8%;
 }
 
 .block-carousel-wrapper .block-carousel {

@@ -194,6 +194,24 @@
 			top: 188px;
 		}
 	}
+	@include media-breakpoint-down(xs) {
+		// Left Column
+		.badge02 {
+			left: 21%;
+		}
+		.badge03 {
+			left: 10%;
+		}
+		.badge04 {
+			right: 5%;
+		}
+		.badge05 {
+			left: 35%;
+		}
+		.badge06 {
+			left: 49%;
+		}
+	}
 	// Right Column
 	.badge09 {
 		right: 0;
@@ -343,6 +361,24 @@
 		.badge17 {
 			right: -18px;
 			top: -3px;
+		}
+	}
+	@include media-breakpoint-down(xs) {
+		// Right Column
+		.badge11 {
+			left: 11%;
+		}
+		.badge12 {
+			left: 24%;
+		}
+		.badge13 {
+			right: 23%;
+		}
+		.badge14 {
+			left: 37%;
+		}
+		.badge16 {
+			right: 8%;
 		}
 	}
 }
