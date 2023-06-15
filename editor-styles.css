@@ -12338,24 +12338,24 @@ a {
     top: 120px;
   }
   .badge-container .badge02 {
-    left: 68px;
+    left: 21%;
     top: 137px;
     z-index: 9;
   }
   .badge-container .badge03 {
-    left: 29px;
+    left: 10%;
     top: 185px;
   }
   .badge-container .badge04 {
-    right: 13px;
+    right: 5%;
     top: 127px;
   }
   .badge-container .badge05 {
-    left: 102px;
+    left: 35%;
     top: 187px;
   }
   .badge-container .badge06 {
-    left: 161px;
+    left: 49%;
     top: 175px;
     width: 158px;
     z-index: 9;
@@ -12364,21 +12364,6 @@ a {
     right: -5px;
     top: 188px;
   }
-}
-.badge-container .badge02 {
-  left: 21%;
-}
-.badge-container .badge03 {
-  left: 10%;
-}
-.badge-container .badge04 {
-  right: 5%;
-}
-.badge-container .badge05 {
-  left: 35%;
-}
-.badge-container .badge06 {
-  left: 49%;
 }
 .badge-container .badge09 {
   right: 0;
@@ -12500,46 +12485,31 @@ a {
     top: 0;
   }
   .badge-container .badge11 {
-    left: 21px;
+    left: 11%;
     top: 12px;
     z-index: 9;
   }
   .badge-container .badge12 {
-    left: 82px;
+    left: 24%;
     top: -22px;
     z-index: 9;
   }
   .badge-container .badge13 {
-    right: 71px;
+    right: 23%;
     top: 29px;
   }
   .badge-container .badge14 {
-    left: 130px;
+    left: 37%;
     top: -18px;
   }
   .badge-container .badge16 {
-    right: 29px;
+    right: 8%;
     top: -34px;
   }
   .badge-container .badge17 {
     right: -18px;
     top: -3px;
   }
-}
-.badge-container .badge11 {
-  left: 11%;
-}
-.badge-container .badge12 {
-  left: 24%;
-}
-.badge-container .badge13 {
-  right: 23%;
-}
-.badge-container .badge14 {
-  left: 37%;
-}
-.badge-container .badge16 {
-  right: 8%;
 }
 
 .block-carousel-wrapper .block-carousel {
