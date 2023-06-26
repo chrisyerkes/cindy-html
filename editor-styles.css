@@ -11961,13 +11961,13 @@ a {
 }
 .project-grid .project .project-info .categories li {
   margin-right: 0.3125rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 .project-grid .project .project-info .categories li:last-child {
   margin-right: 0;
 }
 .project-grid .project .project-info .categories li a {
-  font-weight: 600;
+  font-weight: 500;
 }
 .project-grid .project .project-info .categories li.ui-design a {
   color: #794E69;
@@ -12650,7 +12650,7 @@ a {
   padding: 0;
 }
 .single-project-categories li {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .cindylau-full-width-gallery-grid {

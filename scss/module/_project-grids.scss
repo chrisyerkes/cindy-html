@@ -60,13 +60,13 @@
 
 				li {
 					@include margin-right(5px);
-					font-weight: $semi-bold;
+					font-weight: $medium;
 					
 					&:last-child {
 						margin-right: 0;
 					}
 					a {
-						font-weight: $semi-bold;
+						font-weight: $medium;
 					}
 					&.ui-design {
 						a {
