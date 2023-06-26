@@ -38,7 +38,7 @@ if (!empty($block['textColor'])) {
 
 // Load values and assign defaults.
 $images = get_field('slider_images');
-$size = 'large'; ?>
+$size = 'full'; ?>
 
 <div <?php echo $anchor; ?>class="<?php echo esc_attr($class_name); ?>">
 	<?php if ($images) : ?>
