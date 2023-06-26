@@ -60,7 +60,8 @@
 
 				li {
 					@include margin-right(5px);
-
+					font-weight: $semi-bold;
+					
 					&:last-child {
 						margin-right: 0;
 					}
